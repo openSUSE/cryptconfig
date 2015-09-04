@@ -1,0 +1,125 @@
+AC_PREREQ(2.52)
+
+AC_INIT(cryptconfig, 0.3)
+AM_INIT_AUTOMAKE(cryptconfig, 0.3)
+AM_MAINTAINER_MODE
+
+AM_CONFIG_HEADER(config.h)
+
+AC_ARG_WITH([slibdir], AS_HELP_STRING([--with-slibdir=PATH],
+    [Path to the super lib directory [[/lib]]]),
+    [slibdir="$withval"], [slibdir="/lib"])
+AC_SUBST(slibdir)
+
+dnl
+dnl Require programs
+dnl
+AC_PROG_CC
+AC_PROG_INSTALL
+AC_PROG_LIBTOOL
+
+dnl
+dnl Required headers
+dnl
+AC_HEADER_STDC
+
+AC_CHECK_HEADERS(syslog.h sys/mount.h,
+                 HAVE_GLIBC_HEADERS="yes", HAVE_GLIBC_HEADERS="no")
+if test "x$HAVE_GLIBC_HEADERS" = "xno"; then \
+    AC_ERROR([Missing glibc-devel])
+fi
+
+AC_CHECK_HEADERS(linux/loop.h,
+                 HAVE_KERNEL_HEADERS="yes", HAVE_KERNEL_HEADERS="no")
+if test "x$HAVE_KERNEL_HEADERS" = "xno"; then \
+    AC_ERROR([Missing linux-kernel-headers])
+fi
+
+AC_CHECK_HEADERS(security/pam_modules.h,
+                 HAVE_PAM_HEADERS="yes", HAVE_PAM_HEADERS="no")
+if test "x$HAVE_PAM_HEADERS" = "xno"; then \
+    AC_ERROR([Missing pam-devel])
+fi
+
+dnl 
+dnl Check for library funcs 
+dnl
+AC_CHECK_LIB(crypto, EVP_DecryptInit_ex, HAVE_PROPER_CRYPTO="yes")
+AC_FUNC_MEMCMP
+
+if test "x$HAVE_PROPER_CRYPTO" = "x"; then \
+    AC_ERROR([Missing proper EVP crypt functions])
+fi
+
+dnl
+dnl Translation support
+dnl
+AC_PROG_INTLTOOL([0.23])
+GETTEXT_PACKAGE=cryptconfig
+AC_SUBST(GETTEXT_PACKAGE)
+ALL_LINGUAS="en_US"
+AM_GLIB_GNU_GETTEXT
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package])
+
+dnl
+dnl Check for glib
+dnl
+PKG_CHECK_MODULES(GLIB, glib-2.0 >= 2.8)
+AC_SUBST(GLIB_CFLAGS)
+AC_SUBST(GLIB_LIBS)
+
+dnl
+dnl Check for libxml2
+dnl
+PKG_CHECK_MODULES(LIBXML, libxml-2.0)
+AC_SUBST(LIBXML_CFLAGS)
+AC_SUBST(LIBXML_LIBS)
+
+dnl
+dnl Checks for required binaries
+dnl
+AC_PATH_PROG(DU_BIN_PATH, du)
+if ! test -x "$DU_BIN_PATH"; then
+	AC_MSG_ERROR(du is not installed.)
+fi
+
+AC_PATH_PROG(MKFS_BIN_PATH, mkfs, [], [$PATH:/sbin:/usr/sbin])
+if ! test -x "$MKFS_BIN_PATH"; then
+	AC_MSG_ERROR(mkfs is not installed.)
+fi
+
+AC_PATH_PROG(CRYPTSETUP_BIN_PATH, cryptsetup, [], [$PATH:/sbin:/usr/sbin])
+if ! test -x "$CRYPTSETUP_BIN_PATH"; then
+	AC_MSG_ERROR(cryptsetup is not installed.)
+fi
+
+AC_PATH_PROG(PAMCONFIG_BIN_PATH, pam-config, [], [$PATH:/sbin:/usr/sbin])
+if ! test -x "$PAMCONFIG_BIN_PATH"; then
+	AC_MSG_ERROR(pam-config is not installed.)
+fi
+
+case "$host" in
+    *-*-linux*)
+        # See also <configure-flags> in pam_mount.xml.
+        PAM_MODDIR="\$(slibdir)/security"
+        ;;
+    *-*-darwin*)
+        PAM_MODDIR="/usr/lib/pam"
+        ;;
+    *)
+        PAM_MODDIR="/usr/lib"
+        ;;
+esac
+AC_SUBST(PAM_MODDIR)
+
+AC_OUTPUT([
+Makefile
+man/Makefile
+po/Makefile.in
+src/Makefile
+])
+
+echo
+echo "prefix:                     $prefix"
+echo "PAM_MODDIR:                 $PAM_MODDIR"
+echo

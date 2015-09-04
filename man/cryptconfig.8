@@ -1,0 +1,48 @@
+.\" cryptconfig(8) manual page
+.\"
+.\" Copyright (C) 2006 Chris Rivera
+.\"
+.TH CRYPTCONFIG "8"
+.SH NAME
+cryptconfig \- configure encrytped home directories and LUKS partitions
+.SH SYNOPSIS
+.B cryptconfig [COMMAND] [COMMAND-OPTIONS] [arg1] [arg2] ...
+.SH DESCRIPTION
+\fICryptconfig\fP is a utility for configuring encrypted home directories.
+It also supports creating LUKS disk images, creating LUKS partitions, and
+enlarging disk images along with their file systems. 
+.SH COMMANDS
+The following commands are supported:
+.TP
+.I "make-ehd"
+Create a new encrypted home directory image and image key.
+.TP
+.I "passwd"
+Change the password used to encrypt an image key.
+.TP
+.I "create-image"
+Create an abrbitrary LUKS disk image.
+.TP
+.I "enlarge-image"
+ Enlarge a disk image and it's file system.
+.TP
+.I "format"
+Create a LUKS partition on a device.
+.TP
+.I "pm-enable"
+Enable pam_mount with encrypted home directories.
+.TP
+.I "pm-disable"
+Disable pam_mount with encrypted home directories.
+.TP
+.I "create-key"
+Create a new key that can be added to an image.
+.TP
+.I "open"
+Open a LUKS image
+.TP
+.I "close"
+Close devices using a LUKS image
+.SH SEE ALSO
+.BR cryptsetup (8),
+.BR pam_mount (8)

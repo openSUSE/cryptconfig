@@ -1,0 +1,3 @@
+src/cryptconfig.c
+src/cryptconfig-lib.c
+src/pam_cryptpass.c

@@ -1,0 +1,236 @@
+2008-03-05  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c:
+
+	Fix two bugs in disable_pam_mount ().  Both of them caused 367255.
+
+2008-03-04  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c:
+
+	Specify the permissions when using open with O_CREAT.
+
+2008-03-04  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig.h:
+	* src/cryptconfig.c:
+	* src/cryptconfig-lib.c:
+
+	Add public data support.  We use a very simple approach.  We create a
+	public directory, /home/.$USER.  Any public data is moved from the 
+	encrypted home directory to the public directory.  We then place symlinks
+	in the encrypted home directory and the unencrypted home directory that
+	point to the public data.  The public data is available whether the
+	encrypted home directory is mounted or not.
+
+	This is adds two new commands pd-add and pd-remove.  They each take a
+	list of relative or absolute paths rooted in the encrypted home directory.
+
+	* run-cc-tests.py:
+
+	Add public data tests.
+
+2007-11-08  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c:
+	
+	Add support for parsing the new pam_mount xml
+	config file.
+
+	Use pam-config to add pam_mount and pam_cryptpass
+	to the pam service files instead of doing it
+	myself.
+
+	Update the unit tests.
+
+2007-11-02  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c: Don't fail if 
+	the pam service files don't exist.  This fixes
+	326794.
+
+2007-07-09  Chris Rivera  <crivera@novell.com>
+
+	* src/*: Add memory locking to protect passphrases and
+	decrypted key data.
+
+	* src/cryptconfig-lib.c: Use O_LARGEFILE to open the image.
+
+	* src/cryptconfig.c: Retain the permissions of the key
+	when changing the password.
+
+2007-07-06  Chris Rivera  <crivera@novell.com>
+
+	* cryptconfig.spec: Update the Requires and BuildRequires.
+
+	* configure.in:
+
+	Remove the check for the losetup binary.  Fix the checks for
+	the crypto and pam headers.
+
+	* src/Makefile.am:
+
+	Remove the check for the losetup binary.
+
+	* src/cryptconfig.c:
+
+	Use parse_size () to allow sizes like "1G" or "200M".
+
+	* src/cryptconfig-lib.c:
+
+	Add parse_size().
+	Rename is_pam_mount_setup_for_user() to pam_mount_is_setup_for_user().
+
+	Use LOOP_SET_FD and LOOP_CLR_FD ioctls instead of execing losetup.
+	
+	* src/pam_cryptpass.c: simplify get_key_file().
+
+2007-03-29  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c:
+	
+	Fix the copy_user_data() function to make sure dot directories are getting
+	copied.  This fixes 259113.
+
+	* run-cc-tests.py: Update to check for dot directories.
+	
+2007-03-05  Chris Rivera  <crivera@novell.com>
+
+	* src/pam_cryptpass.c: 
+
+	Implement pam_sm_open_session() and pam_sm_close_session().  This lets us
+	hook into the session stack, before pam_mount, to verify that the authtok
+	being used can decrypt the image key.  If it can't then we can prompt
+	for the key password and sync the two.  This provides a much nicer
+	experience for users of non-local auth mechanisms.
+	
+	* src/cryptconfig.c:
+	
+	Make root the owner of the unencrypted home directory.  This is to avoid
+	confusion if the user logs in from a service that doesn't have pam_mount
+	in the stack.  This fixes 245698.
+
+	Add a flag, --remove-data, that will remove the data in the user's
+	unencrypted home directory after it's been copied to the encrypted image.
+
+	* src/cryptconfig.h:
+
+	Remove unused PAM_PASSWD_CONF define.
+
+	* src/cryptconfig-lib.c:
+
+	Move the list of passwd services to cryptconfig.conf and add gnome-passwd
+	to the default list.
+
+	Add pam_cryptpass.so to the pam session stack before pam_mount to ensure
+	that the key file is in sync with the user's password.
+
+	Rename a few static functions to make them more accurate.
+
+	* run-cc-tests.py: update unit tests.
+
+2007-02-26  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c: Add an entry in cryptconfig.conf for pam passwd
+	services we need to modify and add gnome-passwd to the default list.
+
+2007-02-21  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c: Add a check against a key file size threshold
+	to avoid interger overflow attacks.  This helps fix 243881.
+
+2007-02-20  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c: Remove 'su' from the list of pam config files
+	to edit.  This fixes Bug 245702.
+
+	* src/pam_cryptpass.c:
+	* src/cryptconfig-lib.c: 
+
+	Replace chown and g_stat with fchown and fstat to
+	avoid potential symlink issues.
+
+	Use "--" to prevent user's from adding additional command-line options
+	to apps that we exec.
+
+	Use flock() to avoid races if multiple instances cryptconfig are running.
+
+	* src/cryptconfig.c: s/umask(022)/umask(077)/
+	
+	These changes fix the issues in Bug 243881.
+
+2007-02-14  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c: Use 64-bit versions of lseek ()
+	when enlarging and creating an image.
+
+2007-02-05  Chris Rivera  <crivera@novell.com>
+
+	* run-cc-tests.py: New file for unit tests.
+
+	* src/cryptconfig-lib.c: Add unlock_image()
+
+	Look for the full file path in loop_find_devs_from_image() when
+	figuring out which loop device is being used.
+
+	Make get_passphrase() stop reading input if it encounters a newline.
+
+	* src/cryptconfig.c:  Correctly check the return value for
+	add_key_file_to_device() in the create-image command.
+
+	Refactor code for getting a passphrase and unlocking an image
+	to unlock_image().
+
+	Only call luks_close() if we've actually setup a map device.
+
+	Add mount flags to allow the open and close commands to mount
+	and umount the image device.
+
+	Don't allow encrypted home directories to be created for the root user.
+
+2007-01-23  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig.c:  Set umask to 022 and avoid trying to copy
+	data during the make-ehd command if the user's home dir doesn't exist.
+	This can happen for	AD users.
+
+	* src/cryptconfig-lib.c:
+
+	Add xdm to the default pam services list.
+
+	Refactor some file filtering code down to filter_file ().
+
+	Merge a patch from dgollub@suse.de that fixes a file creation bug.
+
+2007-01-22  Chris Rivera  <crivera@novell.com>
+
+	* src/cryptconfig-lib.c:
+
+	Escape '\' character in the user name before we add an entry
+	in pam_mount.conf.  This is needed for AD users since their
+	user name is normally DOMAIN\user.
+
+2007-01-17  Chris Rivera  <crivera@novell.com>
+
+	* cryptconfig.spec:
+	* Makefile.am:
+	* src/Makefile.am:
+	* src/cryptconfig.h:
+	* src/cryptconfig.c:
+
+	Add cryptconfig.conf.  Right now it only contains the list of
+	pam services we modify when enabling pam_mount.  Add get_pam_services (),
+	which parses cryptconfig.h or falls back to a default list of services.
+
+	* src/cryptconfig.c:  Add the O_TRUNC flag to crappy_rename ().  Change
+	enable/disable_pam_mount_services to use get_pam_services ().
+
+	* src/cryptconfig.h: Bump KEY_DATA_SIZE to 256 bytes.
+
+2007-01-12  Chris Rivera  <crivera@novell.com>
+
+	* Add the open and close commands.
+
+2007-01-04  Chris Rivera  <crivera@novell.com>
+
+	* Initial import.
