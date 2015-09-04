@@ -183,8 +183,10 @@ static gboolean loop_create_new_device (int nr, gchar **device)
     struct stat info;
 
     if (g_stat ("/dev/loop0", &info)) {
-        g_printerr ("stat: %s\n", strerror (errno));
-        return FALSE;
+        /* prefill info with reasonable defaults */
+        info.st_mode = S_IFBLK | 0600;
+        info.st_uid = 0; /* root */
+        info.st_gid = 0; /* root, to be on the safe side */
     }
 
     *device = g_strdup_printf ("/dev/loop%d", nr);
@@ -1298,6 +1300,8 @@ gboolean enable_pam_mount (const char *user, const char *image, const char *key_
     xmlNewProp (node, (xmlChar *) "path", (xmlChar *) image);
     xmlNewProp (node, (xmlChar *) "fskeypath", (xmlChar *) key_file);
     xmlNewProp (node, (xmlChar *) "fskeycipher", (xmlChar *) "aes-256-cbc");
+    xmlNewProp (node, (xmlChar *) "fskeyhash", (xmlChar *) "md5");
+    xmlNewProp (node, (xmlChar *) "cipher", (xmlChar *) "aes-cbc-essiv:sha256");
     xmlNewProp (node, (xmlChar *) "options", (xmlChar *) "loop");
     xmlNewProp (node, (xmlChar *) "mountpoint", (xmlChar *) ent->pw_dir);
     xmlAddChild (root_node, node);
