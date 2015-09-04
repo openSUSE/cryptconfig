@@ -5,10 +5,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cryptconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-25 20:21-0400\n"
-"PO-Revision-Date: 2008-12-03 10:33\n"
+"POT-Creation-Date: 2011-08-12 18:51+0200\n"
+"PO-Revision-Date: 2011-11-02 09:11\n"
 "Last-Translator: Novell Language <language@novell.com>\n"
 "Language-Team: Novell Language <language@novell.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -64,13 +65,17 @@ msgstr "Voeg een extra sleutelbestand toe aan de image"
 #: ../src/cryptconfig.c:117
 #, c-format
 msgid "Using an encrypted home directory for root is not supported\n"
-msgstr "Een gecodeerde home directory gebruiken als hoofdmap, wordt niet ondersteund\n"
+msgstr "Een gecodeerde home directory gebruiken als hoofddirectory, wordt niet ondersteund\n"
 
 #: ../src/cryptconfig.c:124 ../src/cryptconfig.c:475 ../src/cryptconfig.c:601
 #: ../src/cryptconfig.c:1199 ../src/cryptconfig.c:1332
 #, c-format
-msgid "%s is not a supported file system\nSupported file systems are: %s\n"
-msgstr "%s is geen ondersteund bestandssysteem\nOndersteunde bestandssystemen zijn: %s\n"
+msgid ""
+"%s is not a supported file system\n"
+"Supported file systems are: %s\n"
+msgstr ""
+"%s is geen ondersteund bestandssysteem\n"
+"Ondersteunde bestandssystemen zijn: %s\n"
 
 #: ../src/cryptconfig.c:132 ../src/cryptconfig.c:588
 #, c-format
@@ -202,13 +207,21 @@ msgstr "Machtigingen instellen voor sleutelbestand mislukt\n"
 #. create the image file and fill it with zeros or random data
 #: ../src/cryptconfig.c:297 ../src/cryptconfig.c:687
 #, c-format
-msgid "\nCreating disk image... "
-msgstr "\nSchijf-image maken... "
+msgid ""
+"\n"
+"Creating disk image... "
+msgstr ""
+"\n"
+"Schijf-image maken... "
 
 #: ../src/cryptconfig.c:301 ../src/cryptconfig.c:691
 #, c-format
-msgid "\nFailed to create image\n"
-msgstr "\nKan geen image maken\n"
+msgid ""
+"\n"
+"Failed to create image\n"
+msgstr ""
+"\n"
+"Kan geen image maken\n"
 
 #: ../src/cryptconfig.c:305 ../src/cryptconfig.c:523
 #, c-format
@@ -259,8 +272,12 @@ msgstr "Bestaande gegevens kopiëren van %s. Dit kan even duren..."
 
 #: ../src/cryptconfig.c:360
 #, c-format
-msgid "\nFailed to copy user data\n"
-msgstr "\nGebruikersgegevens kopiëren mislukt\n"
+msgid ""
+"\n"
+"Failed to copy user data\n"
+msgstr ""
+"\n"
+"Gebruikersgegevens kopiëren mislukt\n"
 
 #: ../src/cryptconfig.c:374 ../src/cryptconfig.c:506 ../src/cryptconfig.c:695
 #: ../src/cryptconfig.c:710 ../src/cryptconfig.c:827 ../src/cryptconfig.c:908
@@ -314,8 +331,12 @@ msgstr "Apparaat formatteren..."
 
 #: ../src/cryptconfig.c:502
 #, c-format
-msgid "\nFailed to format %s\n"
-msgstr "\nFormatteren van %s mislukt\n"
+msgid ""
+"\n"
+"Failed to format %s\n"
+msgstr ""
+"\n"
+"Formatteren van %s mislukt\n"
 
 #: ../src/cryptconfig.c:511
 #, c-format
@@ -330,8 +351,12 @@ msgstr "Bestandssysteem maken op apparaat..."
 
 #: ../src/cryptconfig.c:519
 #, c-format
-msgid "\nFailed to create filesystem.\n"
-msgstr "\nBestandssysteem maken mislukt.\n"
+msgid ""
+"\n"
+"Failed to create filesystem.\n"
+msgstr ""
+"\n"
+"Bestandssysteem maken mislukt.\n"
 
 #: ../src/cryptconfig.c:560
 msgid "Overwrite an existing image"
@@ -375,8 +400,12 @@ msgstr "LUKS-header maken..."
 
 #: ../src/cryptconfig.c:706
 #, c-format
-msgid "\nFailed to format device\n"
-msgstr "\nApparaat formatteren mislukt\n"
+msgid ""
+"\n"
+"Failed to format device\n"
+msgstr ""
+"\n"
+"Apparaat formatteren mislukt\n"
 
 #: ../src/cryptconfig.c:722 ../src/cryptconfig-lib.c:1706
 #, c-format
@@ -607,13 +636,25 @@ msgstr "Verwijderen van %s mislukt\n"
 
 #: ../src/cryptconfig.c:1420
 #, c-format
-msgid "\nusage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n\nCOMMANDS\n"
-msgstr "\ngebruik: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n \n OPDRACHTEN\n"
+msgid ""
+"\n"
+"usage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n"
+"\n"
+"COMMANDS\n"
+msgstr ""
+"\n"
+"gebruik: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n"
+" \n"
+" OPDRACHTEN\n"
 
 #: ../src/cryptconfig.c:1423
 #, c-format
-msgid "\nYou can run %s [COMMAND] --help for more information on a command.\n"
-msgstr "\nU kunt %s [COMMAND] --help uitvoeren voor meer informatie over een opdracht.\n"
+msgid ""
+"\n"
+"You can run %s [COMMAND] --help for more information on a command.\n"
+msgstr ""
+"\n"
+"U kunt %s [COMMAND] --help uitvoeren voor meer informatie over een opdracht.\n"
 
 #: ../src/cryptconfig.c:1469
 msgid "Create an encrypted home directory image and image key"
@@ -742,8 +783,12 @@ msgid "Extra key file does not exist\n"
 msgstr "Extra sleutelbestand bestaat niet\n"
 
 #: ../src/cryptconfig-lib.c:1790
-msgid "\nEnter the password for the extra key"
-msgstr "\nVoer het wachtwoord in voor de extra sleutel"
+msgid ""
+"\n"
+"Enter the password for the extra key"
+msgstr ""
+"\n"
+"Voer het wachtwoord in voor de extra sleutel"
 
 #: ../src/cryptconfig-lib.c:1792
 #, c-format
@@ -758,4 +803,3 @@ msgstr "Extra sleutel decoderen mislukt\n"
 #: ../src/pam_cryptpass.c:105
 msgid "Enter key file password"
 msgstr "Voer het wachtwoord voor het sleutelbestand in"
-

@@ -5,10 +5,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cryptconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-25 20:21-0400\n"
-"PO-Revision-Date: 2008-12-02 15:53\n"
+"POT-Creation-Date: 2011-08-12 18:51+0200\n"
+"PO-Revision-Date: 2011-11-02 12:39\n"
 "Last-Translator: Novell Language <language@novell.com>\n"
 "Language-Team: Novell Language <language@novell.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,8 +70,12 @@ msgstr "L'utilisation d'un répertoire privé codé pour l'utilisateur root n'es
 #: ../src/cryptconfig.c:124 ../src/cryptconfig.c:475 ../src/cryptconfig.c:601
 #: ../src/cryptconfig.c:1199 ../src/cryptconfig.c:1332
 #, c-format
-msgid "%s is not a supported file system\nSupported file systems are: %s\n"
-msgstr "Le système de fichiers %s n'est pas pris en charge.\nLes systèmes pris en charge sont les suivants : %s\n"
+msgid ""
+"%s is not a supported file system\n"
+"Supported file systems are: %s\n"
+msgstr ""
+"Le système de fichiers %s n'est pas pris en charge.\n"
+"Les systèmes pris en charge sont les suivants : %s\n"
 
 #: ../src/cryptconfig.c:132 ../src/cryptconfig.c:588
 #, c-format
@@ -202,13 +207,21 @@ msgstr "Impossible de définir les autorisations pour le fichier de clé.\n"
 #. create the image file and fill it with zeros or random data
 #: ../src/cryptconfig.c:297 ../src/cryptconfig.c:687
 #, c-format
-msgid "\nCreating disk image... "
-msgstr "\nCréation de l'image du disque... "
+msgid ""
+"\n"
+"Creating disk image... "
+msgstr ""
+"\n"
+"Création de l'image du disque... "
 
 #: ../src/cryptconfig.c:301 ../src/cryptconfig.c:691
 #, c-format
-msgid "\nFailed to create image\n"
-msgstr "\nImpossible de créer l'image du disque.\n"
+msgid ""
+"\n"
+"Failed to create image\n"
+msgstr ""
+"\n"
+"Impossible de créer l'image du disque.\n"
 
 #: ../src/cryptconfig.c:305 ../src/cryptconfig.c:523
 #, c-format
@@ -259,8 +272,12 @@ msgstr "Copie des données existantes depuis %s.  Cette opération peut prendre 
 
 #: ../src/cryptconfig.c:360
 #, c-format
-msgid "\nFailed to copy user data\n"
-msgstr "\nImpossible de copier les données utilisateur.\n"
+msgid ""
+"\n"
+"Failed to copy user data\n"
+msgstr ""
+"\n"
+"Impossible de copier les données utilisateur.\n"
 
 #: ../src/cryptconfig.c:374 ../src/cryptconfig.c:506 ../src/cryptconfig.c:695
 #: ../src/cryptconfig.c:710 ../src/cryptconfig.c:827 ../src/cryptconfig.c:908
@@ -314,8 +331,12 @@ msgstr "Formatage du périphérique... "
 
 #: ../src/cryptconfig.c:502
 #, c-format
-msgid "\nFailed to format %s\n"
-msgstr "\nÉchec du formatage %s\n"
+msgid ""
+"\n"
+"Failed to format %s\n"
+msgstr ""
+"\n"
+"Échec du formatage %s\n"
 
 #: ../src/cryptconfig.c:511
 #, c-format
@@ -330,8 +351,12 @@ msgstr "Création d'un système de fichiers sur le périphérique...  "
 
 #: ../src/cryptconfig.c:519
 #, c-format
-msgid "\nFailed to create filesystem.\n"
-msgstr "\nImpossible de créer un système de fichiers.\n"
+msgid ""
+"\n"
+"Failed to create filesystem.\n"
+msgstr ""
+"\n"
+"Impossible de créer un système de fichiers.\n"
 
 #: ../src/cryptconfig.c:560
 msgid "Overwrite an existing image"
@@ -375,8 +400,12 @@ msgstr "Création d'un en-tête LUKS... "
 
 #: ../src/cryptconfig.c:706
 #, c-format
-msgid "\nFailed to format device\n"
-msgstr "\nÉchec du formatage du périphérique\n"
+msgid ""
+"\n"
+"Failed to format device\n"
+msgstr ""
+"\n"
+"Échec du formatage du périphérique\n"
 
 #: ../src/cryptconfig.c:722 ../src/cryptconfig-lib.c:1706
 #, c-format
@@ -569,7 +598,9 @@ msgstr "Périphérique introuvable\n"
 #: ../src/cryptconfig.c:1265
 #, c-format
 msgid "Failed to umount: %s\n"
-msgstr "Echec de démontage : %s\n\n"
+msgstr ""
+"Echec de démontage : %s\n"
+"\n"
 
 #: ../src/cryptconfig.c:1271
 #, c-format
@@ -607,13 +638,25 @@ msgstr "Échec de suppression de %s\n"
 
 #: ../src/cryptconfig.c:1420
 #, c-format
-msgid "\nusage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n\nCOMMANDS\n"
-msgstr "\nutilisation : %s [COMMANDE] [OPTIONS-COMMANDE] arg1 arg2...\n \n COMMANDES\n"
+msgid ""
+"\n"
+"usage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n"
+"\n"
+"COMMANDS\n"
+msgstr ""
+"\n"
+"utilisation : %s [COMMANDE] [OPTIONS-COMMANDE] arg1 arg2...\n"
+" \n"
+" COMMANDES\n"
 
 #: ../src/cryptconfig.c:1423
 #, c-format
-msgid "\nYou can run %s [COMMAND] --help for more information on a command.\n"
-msgstr "\nVous pouvez exécuter %s [COMMANDE] --help pour obtenir des informations sur la commande en question.\n"
+msgid ""
+"\n"
+"You can run %s [COMMAND] --help for more information on a command.\n"
+msgstr ""
+"\n"
+"Vous pouvez exécuter %s [COMMANDE] --help pour obtenir des informations sur la commande en question.\n"
 
 #: ../src/cryptconfig.c:1469
 msgid "Create an encrypted home directory image and image key"
@@ -742,8 +785,12 @@ msgid "Extra key file does not exist\n"
 msgstr "Le fichier de clé supplémentaire n'existe pas.\n"
 
 #: ../src/cryptconfig-lib.c:1790
-msgid "\nEnter the password for the extra key"
-msgstr "\nEntrez le mot de passe pour la clé supplémentaire"
+msgid ""
+"\n"
+"Enter the password for the extra key"
+msgstr ""
+"\n"
+"Entrez le mot de passe pour la clé supplémentaire"
 
 #: ../src/cryptconfig-lib.c:1792
 #, c-format
@@ -758,4 +805,3 @@ msgstr "Impossible de décoder la clé supplémentaire.\n"
 #: ../src/pam_cryptpass.c:105
 msgid "Enter key file password"
 msgstr "Entrer le mot de passe du fichier de clés"
-

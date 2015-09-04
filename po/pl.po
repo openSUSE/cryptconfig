@@ -5,10 +5,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cryptconfig\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-25 20:21-0400\n"
-"PO-Revision-Date: 2008-12-05 01:26\n"
+"POT-Creation-Date: 2013-01-11 15:49+0100\n"
+"PO-Revision-Date: 2013-02-21 14:37\n"
 "Last-Translator: Novell Language <language@novell.com>\n"
 "Language-Team: Novell Language <language@novell.com>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,8 +70,12 @@ msgstr "Szyfrowany katalog domowy użytkownika root nie jest obsługiwany\n"
 #: ../src/cryptconfig.c:124 ../src/cryptconfig.c:475 ../src/cryptconfig.c:601
 #: ../src/cryptconfig.c:1199 ../src/cryptconfig.c:1332
 #, c-format
-msgid "%s is not a supported file system\nSupported file systems are: %s\n"
-msgstr "System plików %s nie jest obsługiwany.\nDostępne systemy plików to: %s\n"
+msgid ""
+"%s is not a supported file system\n"
+"Supported file systems are: %s\n"
+msgstr ""
+"System plików %s nie jest obsługiwany.\n"
+"Dostępne systemy plików to: %s\n"
 
 #: ../src/cryptconfig.c:132 ../src/cryptconfig.c:588
 #, c-format
@@ -202,13 +207,21 @@ msgstr "Ustawienie uprawnień dla pliku klucza nie powiodło się\n"
 #. create the image file and fill it with zeros or random data
 #: ../src/cryptconfig.c:297 ../src/cryptconfig.c:687
 #, c-format
-msgid "\nCreating disk image... "
-msgstr "\nTworzenie obrazu dysku..."
+msgid ""
+"\n"
+"Creating disk image... "
+msgstr ""
+"\n"
+"Tworzenie obrazu dysku... "
 
 #: ../src/cryptconfig.c:301 ../src/cryptconfig.c:691
 #, c-format
-msgid "\nFailed to create image\n"
-msgstr "\nTworzenie obrazu nie powiodło się\n"
+msgid ""
+"\n"
+"Failed to create image\n"
+msgstr ""
+"\n"
+"Tworzenie obrazu nie powiodło się\n"
 
 #: ../src/cryptconfig.c:305 ../src/cryptconfig.c:523
 #, c-format
@@ -255,12 +268,16 @@ msgstr "Ustawienie uprawnień katalogu nie powiodło się\n"
 #: ../src/cryptconfig.c:358
 #, c-format
 msgid "Copying existing data from %s.  This may take some time... "
-msgstr "Kopiowanie danych z %s. Proces ten może chwilę potrwać..."
+msgstr "Kopiowanie danych z %s. Proces ten może chwilę potrwać... "
 
 #: ../src/cryptconfig.c:360
 #, c-format
-msgid "\nFailed to copy user data\n"
-msgstr "\nKopiowanie plików użytkownika nie powiodło się\n"
+msgid ""
+"\n"
+"Failed to copy user data\n"
+msgstr ""
+"\n"
+"Kopiowanie plików użytkownika nie powiodło się\n"
 
 #: ../src/cryptconfig.c:374 ../src/cryptconfig.c:506 ../src/cryptconfig.c:695
 #: ../src/cryptconfig.c:710 ../src/cryptconfig.c:827 ../src/cryptconfig.c:908
@@ -310,12 +327,16 @@ msgstr "Proszę podać hasło dla partycji"
 #: ../src/cryptconfig.c:500
 #, c-format
 msgid "Formatting device... "
-msgstr "Formatowanie urządzenia..."
+msgstr "Formatowanie urządzenia... "
 
 #: ../src/cryptconfig.c:502
 #, c-format
-msgid "\nFailed to format %s\n"
-msgstr "\nFormatowanie %s nie powiodło się\n"
+msgid ""
+"\n"
+"Failed to format %s\n"
+msgstr ""
+"\n"
+"Formatowanie %s nie powiodło się\n"
 
 #: ../src/cryptconfig.c:511
 #, c-format
@@ -326,12 +347,16 @@ msgstr "Otwarcie %s nie powiodło się\n"
 #: ../src/cryptconfig.c:516
 #, c-format
 msgid "Creating file system on device...  "
-msgstr "Tworzenie systemu plików na urządzeniu..."
+msgstr "Tworzenie systemu plików na urządzeniu...  "
 
 #: ../src/cryptconfig.c:519
 #, c-format
-msgid "\nFailed to create filesystem.\n"
-msgstr "\nTworzenie systemu plików nie powiodło się\n"
+msgid ""
+"\n"
+"Failed to create filesystem.\n"
+msgstr ""
+"\n"
+"Tworzenie systemu plików nie powiodło się\n"
 
 #: ../src/cryptconfig.c:560
 msgid "Overwrite an existing image"
@@ -352,7 +377,7 @@ msgstr "\"%s\" już istnieje. Opcja --force pozwala na nadpisanie.\n"
 
 #: ../src/cryptconfig.c:623
 msgid "Enter the password for the existing key file "
-msgstr "Proszę podać hasło dla istniejącego pliku klucza"
+msgstr "Proszę podać hasło dla istniejącego pliku klucza "
 
 #: ../src/cryptconfig.c:625
 msgid "Enter a password to encrypt the key file with"
@@ -371,12 +396,16 @@ msgstr "Odczytanie danych klucza nie powiodło się\n"
 #: ../src/cryptconfig.c:704
 #, c-format
 msgid "Creating LUKS header... "
-msgstr "Tworzenie nagłówka LUKS..."
+msgstr "Tworzenie nagłówka LUKS... "
 
 #: ../src/cryptconfig.c:706
 #, c-format
-msgid "\nFailed to format device\n"
-msgstr "\nFormatowanie urządzenia nie powiodło się\n"
+msgid ""
+"\n"
+"Failed to format device\n"
+msgstr ""
+"\n"
+"Formatowanie urządzenia nie powiodło się\n"
 
 #: ../src/cryptconfig.c:722 ../src/cryptconfig-lib.c:1706
 #, c-format
@@ -607,13 +636,25 @@ msgstr "Usunięcie %s nie powiodło się\n"
 
 #: ../src/cryptconfig.c:1420
 #, c-format
-msgid "\nusage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n\nCOMMANDS\n"
-msgstr "\nużycie: %s [POLECENIE] [OPCJE-POLECENIA] arg1 arg2...\n\nPOLECENIA\n"
+msgid ""
+"\n"
+"usage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n"
+"\n"
+"COMMANDS\n"
+msgstr ""
+"\n"
+"użycie: %s [POLECENIE] [OPCJE-POLECENIA] arg1 arg2...\n"
+"\n"
+"POLECENIA\n"
 
 #: ../src/cryptconfig.c:1423
 #, c-format
-msgid "\nYou can run %s [COMMAND] --help for more information on a command.\n"
-msgstr "\n%s [POLECENIE] --help wyświetla więcej informacji o poleceniu.\n"
+msgid ""
+"\n"
+"You can run %s [COMMAND] --help for more information on a command.\n"
+msgstr ""
+"\n"
+"%s [POLECENIE] --help wyświetla więcej informacji o poleceniu.\n"
 
 #: ../src/cryptconfig.c:1469
 msgid "Create an encrypted home directory image and image key"
@@ -742,8 +783,12 @@ msgid "Extra key file does not exist\n"
 msgstr "Plik dodatkowego klucza nie istnieje\n"
 
 #: ../src/cryptconfig-lib.c:1790
-msgid "\nEnter the password for the extra key"
-msgstr "\nProszę podać hasło dla dodatkowego klucza"
+msgid ""
+"\n"
+"Enter the password for the extra key"
+msgstr ""
+"\n"
+"Proszę podać hasło dla dodatkowego klucza"
 
 #: ../src/cryptconfig-lib.c:1792
 #, c-format
@@ -758,4 +803,3 @@ msgstr "Odszyfrowanie dodatkowego klucza nie powiodło się\n"
 #: ../src/pam_cryptpass.c:105
 msgid "Enter key file password"
 msgstr "Proszę podać hasło pliku klucza"
-
