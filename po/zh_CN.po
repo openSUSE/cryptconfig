@@ -1,0 +1,761 @@
+# Copyright (C) 2006 SuSE Linux Products GmbH, Nuernberg
+# This file is distributed under the same license as the package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cryptconfig\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-25 20:21-0400\n"
+"PO-Revision-Date: 2008-12-04 14:59\n"
+"Last-Translator: Novell Language <language@novell.com>\n"
+"Language-Team: Novell Language <language@novell.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/cryptconfig.c:78 ../src/cryptconfig.c:1096
+msgid "Don't verify the passphrase"
+msgstr "不校验口令字"
+
+#: ../src/cryptconfig.c:79
+msgid "Don't setup pam_mount"
+msgstr "不设置 pam_mount"
+
+#: ../src/cryptconfig.c:80
+msgid "Don't copy user's existing data"
+msgstr "不复制用户的现有数据"
+
+#: ../src/cryptconfig.c:81 ../src/cryptconfig.c:559
+msgid "Use random data to fill the image"
+msgstr "使用随机数据填充映象"
+
+#: ../src/cryptconfig.c:82
+msgid "Overwrite existing image and key"
+msgstr "重写现有映象和键"
+
+#: ../src/cryptconfig.c:83
+msgid "Remove the old home directory after data is copied"
+msgstr "复制数据后去除旧的用户主目录"
+
+#: ../src/cryptconfig.c:85 ../src/cryptconfig.c:944
+msgid "Replace an existing user entry in pam_mount"
+msgstr "在 pam_mount 中替换现有用户项"
+
+#: ../src/cryptconfig.c:86 ../src/cryptconfig.c:1174
+msgid "The filesystem type. The default is ext3"
+msgstr "文件系统类型。 默认值为 ext3"
+
+#: ../src/cryptconfig.c:88
+msgid "The home directory image. The default is $USER_HOME.img"
+msgstr "主目录映象。 默认值为 $USER_HOME.img"
+
+#: ../src/cryptconfig.c:90
+msgid "The image key file. The default is $USER_HOME.key"
+msgstr "映象键文件。 默认值为 $USER_HOME.key"
+
+#: ../src/cryptconfig.c:92 ../src/cryptconfig.c:564
+msgid "Use an existing key file instead of generating a new one"
+msgstr "使用现有键文件，而不是生成新的键文件"
+
+#: ../src/cryptconfig.c:94 ../src/cryptconfig.c:566
+msgid "Add an additional key file to the image"
+msgstr "向映象添加附加键文件"
+
+#: ../src/cryptconfig.c:117
+#, c-format
+msgid "Using an encrypted home directory for root is not supported\n"
+msgstr "不支持使用加密用户主目录作为根目录\n"
+
+#: ../src/cryptconfig.c:124 ../src/cryptconfig.c:475 ../src/cryptconfig.c:601
+#: ../src/cryptconfig.c:1199 ../src/cryptconfig.c:1332
+#, c-format
+msgid "%s is not a supported file system\nSupported file systems are: %s\n"
+msgstr "%s 不是受支持的文件系统\n受支持的文件系统有： %s\n"
+
+#: ../src/cryptconfig.c:132 ../src/cryptconfig.c:588
+#, c-format
+msgid "Invalid image size\n"
+msgstr "无效映象大小\n"
+
+#: ../src/cryptconfig.c:138 ../src/cryptconfig.c:609
+#, c-format
+msgid "The image_size must be at least %lld MBs for the chosen file system.\n"
+msgstr "对选定的文件系统，image_size 必须至少为 %lld MB。\n"
+
+#: ../src/cryptconfig.c:146 ../src/cryptconfig.c:1325
+#, c-format
+msgid "Failed to lookup user '%s'\n"
+msgstr "未能查找用户“%s”\n"
+
+#: ../src/cryptconfig.c:153 ../src/cryptconfig.c:977
+#, c-format
+msgid "pam_mount is already setup for %s.  Use --replace to replace the existing entry\n"
+msgstr "已为 %s 设置 pam_mount。  使用 --replace 替换现有项\n"
+
+#: ../src/cryptconfig.c:158 ../src/cryptconfig.c:982
+#, c-format
+msgid "Failed to remove old pam_mount entry\n"
+msgstr "未能去除旧的 pam_mount 项\n"
+
+#: ../src/cryptconfig.c:172
+#, c-format
+msgid "image file must be an absolute path\n"
+msgstr "映象文件必须是绝对路径\n"
+
+#: ../src/cryptconfig.c:179
+#, c-format
+msgid "'%s' is not a directory\n"
+msgstr "'%s‘ 不是目录\n"
+
+#: ../src/cryptconfig.c:186 ../src/cryptconfig.c:617
+#, c-format
+msgid "Not enough space to create %s\n"
+msgstr "没有足够的空间来创建 %s\n"
+
+#: ../src/cryptconfig.c:196
+#, c-format
+msgid "%s already exists.  Use --force to overwrite it.\n"
+msgstr "%s 已存在。  使用 –-force 重写。\n"
+
+#: ../src/cryptconfig.c:203 ../src/cryptconfig.c:638
+#, c-format
+msgid "You can't specify both --key-file and --existing-key-file\n"
+msgstr "不能同时指定 --key-file 和 --existing-key-file\n"
+
+#: ../src/cryptconfig.c:208 ../src/cryptconfig.c:643
+#, c-format
+msgid "The existing key file must be an absolute path\n"
+msgstr "现有键文件必须是绝对路径\n"
+
+#: ../src/cryptconfig.c:213 ../src/cryptconfig.c:648 ../src/cryptconfig.c:1192
+#, c-format
+msgid "%s does not exist\n"
+msgstr "%s 不存在\n"
+
+#: ../src/cryptconfig.c:225 ../src/cryptconfig.c:1003
+#, c-format
+msgid "The key file must be an absolute path\n"
+msgstr "键文件必须是绝对路径\n"
+
+#: ../src/cryptconfig.c:234
+#, c-format
+msgid "The key file directory does not exist\n"
+msgstr "键文件目录不存在\n"
+
+#: ../src/cryptconfig.c:241
+#, c-format
+msgid "'%s' already exists.  Use --force to overwrite it.\n"
+msgstr "'%s 已存在。  使用 –-force 重写。\n"
+
+#: ../src/cryptconfig.c:247
+#, c-format
+msgid "Skipping data copy since user's home directory does not exist\n"
+msgstr "由于用户主目录不存在而正在跳过数据复制\n"
+
+#: ../src/cryptconfig.c:255
+#, c-format
+msgid "There is not enough disk space left to copy existing data\n"
+msgstr "没有足够磁盘空间可用于复制现有数据\n"
+
+#: ../src/cryptconfig.c:260
+#, c-format
+msgid "The specified image size is not large enough to hold the user's data\n"
+msgstr "指定的映象大小不足以存储用户数据\n"
+
+#: ../src/cryptconfig.c:265
+#, c-format
+msgid "Enter the password for %s"
+msgstr "输入 %s 的口令"
+
+#: ../src/cryptconfig.c:266
+#, c-format
+msgid "Enter %s's password"
+msgstr "输入 %s 的口令"
+
+#: ../src/cryptconfig.c:268 ../src/cryptconfig.c:495 ../src/cryptconfig.c:631
+#: ../src/cryptconfig.c:1128 ../src/cryptconfig-lib.c:1718
+#, c-format
+msgid "Failed to get password\n"
+msgstr "未能获取口令\n"
+
+#: ../src/cryptconfig.c:275 ../src/cryptconfig.c:653
+#, c-format
+msgid "Unable to decrypt %s with the supplied password\n"
+msgstr "无法使用提供的口令解密 %s\n"
+
+#: ../src/cryptconfig.c:280
+#, c-format
+msgid "Failed to get key data\n"
+msgstr "未能获取键数据\n"
+
+#: ../src/cryptconfig.c:285 ../src/cryptconfig.c:674 ../src/cryptconfig.c:1133
+#, c-format
+msgid "Failed to create image key\n"
+msgstr "未能创建映象键\n"
+
+#: ../src/cryptconfig.c:291 ../src/cryptconfig.c:1138
+#, c-format
+msgid "Failed to set permissions for key file\n"
+msgstr "未能设置键文件的许可权限\n"
+
+#. create and set permissions for our new image
+#. create the image file and fill it with zeros or random data
+#: ../src/cryptconfig.c:297 ../src/cryptconfig.c:687
+#, c-format
+msgid "\nCreating disk image... "
+msgstr "\n正在创建磁盘映象… "
+
+#: ../src/cryptconfig.c:301 ../src/cryptconfig.c:691
+#, c-format
+msgid "\nFailed to create image\n"
+msgstr "\n未能创建映象\n"
+
+#: ../src/cryptconfig.c:305 ../src/cryptconfig.c:523
+#, c-format
+msgid "Done\n"
+msgstr "已完成\n"
+
+#: ../src/cryptconfig.c:309
+#, c-format
+msgid "Failed to set permissions for new image\n"
+msgstr "未能设置新映象的许可权限\n"
+
+#: ../src/cryptconfig.c:315 ../src/cryptconfig.c:333 ../src/cryptconfig.c:699
+#: ../src/cryptconfig.c:1207
+#, c-format
+msgid "Failed to open image\n"
+msgstr "未能打开映象\n"
+
+#: ../src/cryptconfig.c:321
+#, c-format
+msgid "Failed to format image\n"
+msgstr "未能格式化映象\n"
+
+#: ../src/cryptconfig.c:328 ../src/cryptconfig.c:715
+#: ../src/cryptconfig-lib.c:1804
+#, c-format
+msgid "Failed to add extra key\n"
+msgstr "未能添加额外键\n"
+
+#: ../src/cryptconfig.c:340
+#, c-format
+msgid "Failed to create filesystem.\n"
+msgstr "未能创建文件系统。\n"
+
+#: ../src/cryptconfig.c:346 ../src/cryptconfig.c:1357
+#, c-format
+msgid "Failed to mount image\n"
+msgstr "未能装入映象\n"
+
+#: ../src/cryptconfig.c:352
+#, c-format
+msgid "Failed to set new directory permissions\n"
+msgstr "未能设置新目录的许可权限\n"
+
+#: ../src/cryptconfig.c:358
+#, c-format
+msgid "Copying existing data from %s.  This may take some time... "
+msgstr "正在从 %s 复制现有数据  这可能需要一段时间…"
+
+#: ../src/cryptconfig.c:360
+#, c-format
+msgid "\nFailed to copy user data\n"
+msgstr "\n未能复制用户数据\n"
+
+#: ../src/cryptconfig.c:374 ../src/cryptconfig.c:506 ../src/cryptconfig.c:695
+#: ../src/cryptconfig.c:710 ../src/cryptconfig.c:827 ../src/cryptconfig.c:908
+#: ../src/cryptconfig.c:1143 ../src/cryptconfig.c:1281
+#: ../src/cryptconfig.c:1375
+#, c-format
+msgid "Done.\n"
+msgstr "已完成。\n"
+
+#: ../src/cryptconfig.c:387
+#, c-format
+msgid "Failed to setup pam_mount\n"
+msgstr "未能设置 pam_mount\n"
+
+#: ../src/cryptconfig.c:439 ../src/cryptconfig.c:558 ../src/cryptconfig.c:853
+msgid "Don't verify the new password"
+msgstr "不校验新口令"
+
+#: ../src/cryptconfig.c:440
+msgid "The filesystem type, defaults to ext3"
+msgstr "文件系统类型，默认值为 ext3"
+
+#: ../src/cryptconfig.c:448 ../src/cryptconfig.c:574 ../src/cryptconfig.c:786
+#: ../src/cryptconfig.c:861 ../src/cryptconfig.c:956 ../src/cryptconfig.c:1049
+#: ../src/cryptconfig.c:1105 ../src/cryptconfig.c:1182
+#: ../src/cryptconfig.c:1249 ../src/cryptconfig.c:1314
+#, c-format
+msgid "parsing failed: %s\n"
+msgstr "语法分析失败： %s\n"
+
+#: ../src/cryptconfig.c:462
+#, c-format
+msgid "%s is not a block device\n"
+msgstr "%s 不是块设备\n"
+
+#: ../src/cryptconfig.c:468
+#, c-format
+msgid "%s is currently mounted\n"
+msgstr "%s 当前已装入\n"
+
+#. get the password
+#: ../src/cryptconfig.c:494
+msgid "Enter a password for the partition"
+msgstr "输入该分区的口令"
+
+#. format the device
+#: ../src/cryptconfig.c:500
+#, c-format
+msgid "Formatting device... "
+msgstr "正在格式化设备…"
+
+#: ../src/cryptconfig.c:502
+#, c-format
+msgid "\nFailed to format %s\n"
+msgstr "\n未能格式化 %s\n"
+
+#: ../src/cryptconfig.c:511
+#, c-format
+msgid "Failed to open %s\n"
+msgstr "未能打开 %s\n"
+
+#. create the filesystem
+#: ../src/cryptconfig.c:516
+#, c-format
+msgid "Creating file system on device...  "
+msgstr "正在设备上创建文件系统…"
+
+#: ../src/cryptconfig.c:519
+#, c-format
+msgid "\nFailed to create filesystem.\n"
+msgstr "\n未能创建文件系统。\n"
+
+#: ../src/cryptconfig.c:560
+msgid "Overwrite an existing image"
+msgstr "重写现有映象"
+
+#: ../src/cryptconfig.c:561 ../src/cryptconfig.c:1173
+msgid "The image key file"
+msgstr "映象键文件"
+
+#: ../src/cryptconfig.c:562
+msgid "The file system type, defaults to ext3"
+msgstr "文件系统类型，默认值为 ext3"
+
+#: ../src/cryptconfig.c:594 ../src/cryptconfig.c:662
+#, c-format
+msgid "%s already exists.  Use --force to overwrite.\n"
+msgstr "%s 已存在。  使用 –-force 重写。\n"
+
+#: ../src/cryptconfig.c:623
+msgid "Enter the password for the existing key file "
+msgstr "输入现有键文件的口令"
+
+#: ../src/cryptconfig.c:625
+msgid "Enter a password to encrypt the key file with"
+msgstr "输入用于加密键文件的口令"
+
+#: ../src/cryptconfig.c:627
+msgid "Enter the new image password"
+msgstr "输入新映象口令"
+
+#: ../src/cryptconfig.c:667
+#, c-format
+msgid "Failed to read key data\n"
+msgstr "未能读取键数据\n"
+
+#. format the image
+#: ../src/cryptconfig.c:704
+#, c-format
+msgid "Creating LUKS header... "
+msgstr "正在创建 LUKS 报头…"
+
+#: ../src/cryptconfig.c:706
+#, c-format
+msgid "\nFailed to format device\n"
+msgstr "\n未能格式化设备\n"
+
+#: ../src/cryptconfig.c:722 ../src/cryptconfig-lib.c:1706
+#, c-format
+msgid "Failed to create map name\n"
+msgstr "未能创建映射名称\n"
+
+#: ../src/cryptconfig.c:727 ../src/cryptconfig-lib.c:1747
+#, c-format
+msgid "Failed to open device\n"
+msgstr "未能打开设备\n"
+
+#: ../src/cryptconfig.c:733
+#, c-format
+msgid "Failed create file system on mapped device\n"
+msgstr "未能在映射的设备上创建文件系统\n"
+
+#: ../src/cryptconfig.c:778
+msgid "The encrytped key for the image"
+msgstr "映象的加密键"
+
+#: ../src/cryptconfig.c:799
+#, c-format
+msgid "Invalid size\n"
+msgstr "无效大小\n"
+
+#: ../src/cryptconfig.c:804
+#, c-format
+msgid "Image file '%s' does not exist\n"
+msgstr "映象文件“%s”不存在\n"
+
+#: ../src/cryptconfig.c:810
+#, c-format
+msgid "Failed to resize image\n"
+msgstr "未能改变映象大小\n"
+
+#: ../src/cryptconfig.c:816 ../src/cryptconfig.c:1352
+#, c-format
+msgid "Failed to unlock image\n"
+msgstr "无法对映像解除锁定\n"
+
+#: ../src/cryptconfig.c:822
+#, c-format
+msgid "Failed to resize the file system on %s\n"
+msgstr "未能改变 %s 上的文件系统大小\n"
+
+#: ../src/cryptconfig.c:874
+#, c-format
+msgid "Failed to stat '%s': %s\n"
+msgstr "未能启动“%s”：%s\n"
+
+#. get both passwords
+#: ../src/cryptconfig.c:879
+msgid "Enter the EXISTING password"
+msgstr "输入现有口令"
+
+#: ../src/cryptconfig.c:880
+#, c-format
+msgid "Failed to get existing password\n"
+msgstr "未能获取现有口令\n"
+
+#: ../src/cryptconfig.c:885
+msgid "Enter the NEW password"
+msgstr "输入新口令"
+
+#: ../src/cryptconfig.c:886
+#, c-format
+msgid "Failed to get new password\n"
+msgstr "未能获取新口令\n"
+
+#: ../src/cryptconfig.c:893
+#, c-format
+msgid "Failed to decrypt key with old password.\n"
+msgstr "未能使用旧口令解密键。\n"
+
+#: ../src/cryptconfig.c:898
+#, c-format
+msgid "Failed to encrypt new key\n"
+msgstr "未能加密新键\n"
+
+#: ../src/cryptconfig.c:903
+#, c-format
+msgid "Failed to retain permissions for %s\n"
+msgstr "未能保留 %s 的许可权限\n"
+
+#: ../src/cryptconfig.c:946
+msgid "The user's home image file, defaults to /home/$USER.img"
+msgstr "用户的主映象文件，默认为 home/$USER.img"
+
+#: ../src/cryptconfig.c:948
+msgid "The user's image key file, defaults to /home/$USER.key"
+msgstr "用户的映象键文件，默认为 home/$USER.key"
+
+#: ../src/cryptconfig.c:970 ../src/cryptconfig.c:1065
+#: ../src/cryptconfig-lib.c:1148
+#, c-format
+msgid "Failed to lookup user %s\n"
+msgstr "未能查找用户 %s\n"
+
+#: ../src/cryptconfig.c:993
+#, c-format
+msgid "The image file must be an absolute path\n"
+msgstr "映象文件必须是绝对路径\n"
+
+#: ../src/cryptconfig.c:1009
+#, c-format
+msgid "The image file '%s' does not exist\n"
+msgstr "映象文件“%s”不存在\n"
+
+#: ../src/cryptconfig.c:1014
+#, c-format
+msgid "The key file '%s' does not exist\n"
+msgstr "键文件“%s”不存在\n"
+
+#: ../src/cryptconfig.c:1020
+#, c-format
+msgid "Failed to enable pam_mount\n"
+msgstr "未能启用 pam_mount\n"
+
+#: ../src/cryptconfig.c:1022
+#, c-format
+msgid "pam_mount is now enabled for %s\n"
+msgstr "未对 %s 启用 pam_mount\n"
+
+#: ../src/cryptconfig.c:1041
+msgid "Disable pam_mount for all users"
+msgstr "对所有用户禁用 pam_mount"
+
+#: ../src/cryptconfig.c:1073
+#, c-format
+msgid "Failed to disable pam_mount\n"
+msgstr "未能禁用 pam_mount\n"
+
+#: ../src/cryptconfig.c:1075
+#, c-format
+msgid "pam_mount is disabled for all users\n"
+msgstr "对所有用户禁用了 pam_mount\n"
+
+#: ../src/cryptconfig.c:1077
+#, c-format
+msgid "pam_mount is disabled for %s\n"
+msgstr "对 %s 禁用了 pam_mount\n"
+
+#: ../src/cryptconfig.c:1097
+msgid "Overwrite an existing key"
+msgstr "重写现有键"
+
+#: ../src/cryptconfig.c:1117
+#, c-format
+msgid "The key file already exists.  Use --force to overwrite it.\n"
+msgstr "键文件已存在。  使用 –-force 重写。\n"
+
+#: ../src/cryptconfig.c:1122
+#, c-format
+msgid "Failed to generate key data\n"
+msgstr "未能生成键数据\n"
+
+#: ../src/cryptconfig.c:1126
+msgid "Enter a password for the new key"
+msgstr "输入新键的口令"
+
+#: ../src/cryptconfig.c:1172
+msgid "Mount the image at the specified directory"
+msgstr "在指定目录下装入映像"
+
+#: ../src/cryptconfig.c:1214
+#, c-format
+msgid "%s is not a directory\n"
+msgstr "'%s‘ 不是目录\n"
+
+#: ../src/cryptconfig.c:1219
+#, c-format
+msgid "Failed to mount device\n"
+msgstr "无法装入设备\n"
+
+#: ../src/cryptconfig.c:1223
+#, c-format
+msgid "%s is now mounted at %s\n"
+msgstr "%s 现在装入 %s\n"
+
+#: ../src/cryptconfig.c:1225
+#, c-format
+msgid "%s is now available as device %s\n"
+msgstr "%s 现在可作为 %s 设备使用\n"
+
+#: ../src/cryptconfig.c:1259
+#, c-format
+msgid "Unable to find device\n"
+msgstr "无法找到设备\n"
+
+#: ../src/cryptconfig.c:1265
+#, c-format
+msgid "Failed to umount: %s\n"
+msgstr "无法卸下：%s\n"
+
+#: ../src/cryptconfig.c:1271
+#, c-format
+msgid "Unable to close mapped device\n"
+msgstr "无法关闭映射的设备\n"
+
+#: ../src/cryptconfig.c:1277
+#, c-format
+msgid "Unable to close loop device\n"
+msgstr "无法关闭循环设备\n"
+
+#: ../src/cryptconfig.c:1306
+msgid "The filesystem type. The default is ext3."
+msgstr "文件系统类型。默认值为 ext3。"
+
+#: ../src/cryptconfig.c:1342
+#, c-format
+msgid "Pam mount is not setup for '%s'\n"
+msgstr "Pam 装入不是设置用于“%s”的\n"
+
+#: ../src/cryptconfig.c:1347
+#, c-format
+msgid "%s is currently in use.  Unable to continue.\n"
+msgstr "%s 当前正在使用中。无法继续。\n"
+
+#: ../src/cryptconfig.c:1364
+#, c-format
+msgid "Failed to add %s\n"
+msgstr "未能添加 %s\n"
+
+#: ../src/cryptconfig.c:1369
+#, c-format
+msgid "Failed to remove %s\n"
+msgstr "未能去除 %s\n"
+
+#: ../src/cryptconfig.c:1420
+#, c-format
+msgid "\nusage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n\nCOMMANDS\n"
+msgstr "\n用法： %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n \n COMMANDS\n"
+
+#: ../src/cryptconfig.c:1423
+#, c-format
+msgid "\nYou can run %s [COMMAND] --help for more information on a command.\n"
+msgstr "\n可以运行 %s [COMMAND] --help 了解关于一个命令的更多信息。\n"
+
+#: ../src/cryptconfig.c:1469
+msgid "Create an encrypted home directory image and image key"
+msgstr "创建加密用户主目录映象和映象键"
+
+#: ../src/cryptconfig.c:1472
+msgid "Enlarge a disk image and it's file system"
+msgstr "增大磁盘映象及其文件系统"
+
+#: ../src/cryptconfig.c:1475
+msgid "Change the password used to encrypt/decrypt a key file"
+msgstr "更改用于加密/解密键文件的口令"
+
+#: ../src/cryptconfig.c:1478
+msgid "Enable pam_mount with encrypted home directories"
+msgstr "对加密的用户主目录启用 pam_mount"
+
+#: ../src/cryptconfig.c:1481
+msgid "Disable pam_mount with encrypted home directories"
+msgstr "对加密的用户主目录禁用 pam_mount"
+
+#: ../src/cryptconfig.c:1484
+msgid "Create an arbitrary LUKS image"
+msgstr "创建任意 LUKS 映像"
+
+#: ../src/cryptconfig.c:1487
+msgid "Create a LUKS partition on a device"
+msgstr "在设备上创建 LUKS 分区"
+
+#: ../src/cryptconfig.c:1490
+msgid "Create a new key that can be added to a LUKS image"
+msgstr "创建可以添加到 LUKS 映象的新键"
+
+#: ../src/cryptconfig.c:1493
+msgid "Open a LUKS image"
+msgstr "打开 LUKS 映象"
+
+#: ../src/cryptconfig.c:1496
+msgid "Close devices using a LUKS image"
+msgstr "关闭使用 LUKS 映象的设备"
+
+#: ../src/cryptconfig.c:1499
+msgid "Add public data"
+msgstr "添加公共数据"
+
+#: ../src/cryptconfig.c:1502
+msgid "Remove public data"
+msgstr "去除公共数据"
+
+#: ../src/cryptconfig.c:1513
+#, c-format
+msgid "You must be root to run this command\n"
+msgstr "必须作为 root 用户运行此命令\n"
+
+#: ../src/cryptconfig-lib.c:113
+#, c-format
+msgid "move failed: %s\n"
+msgstr "移动失败：%s\n"
+
+#: ../src/cryptconfig-lib.c:278 ../src/cryptconfig-lib.c:317
+#, c-format
+msgid "Failed to load "
+msgstr "未能装载"
+
+#: ../src/cryptconfig-lib.c:284 ../src/cryptconfig-lib.c:323
+#, c-format
+msgid "Failed to load service list from "
+msgstr "未能从以下位置装载服务列表："
+
+#: ../src/cryptconfig-lib.c:358
+#, c-format
+msgid "Failed to get pam services list\n"
+msgstr "未能获取 pam 服务列表\n"
+
+#: ../src/cryptconfig-lib.c:600
+#, c-format
+msgid "key file is too large\n"
+msgstr "密钥文件太大\n"
+
+#: ../src/cryptconfig-lib.c:1120
+#, c-format
+msgid "Failed to create temp file\n"
+msgstr "未能创建临时文件\n"
+
+#: ../src/cryptconfig-lib.c:1494
+#, c-format
+msgid "g_dir_open: %s\n"
+msgstr "g_dir_open：%s\n"
+
+#: ../src/cryptconfig-lib.c:1512
+#, c-format
+msgid "copy failed: %s\n"
+msgstr "复制失败： %s\n"
+
+#: ../src/cryptconfig-lib.c:1712
+#, c-format
+msgid "The map device for this image is in use\n"
+msgstr "该映像的映射设备正在使用\n"
+
+#: ../src/cryptconfig-lib.c:1716
+msgid "Enter the key file password"
+msgstr "输入键文件口令"
+
+#: ../src/cryptconfig-lib.c:1716
+msgid "Enter the image password"
+msgstr "输入映象口令"
+
+#: ../src/cryptconfig-lib.c:1725
+#, c-format
+msgid "Unable to access the specified key file\n"
+msgstr "无法访问指定的键文件\n"
+
+#: ../src/cryptconfig-lib.c:1730
+#, c-format
+msgid "Failed to decrypt key file with the provided password\n"
+msgstr "未能使用提供的口令解密键文件\n"
+
+#: ../src/cryptconfig-lib.c:1741
+#, c-format
+msgid "Failed to open disk image\n"
+msgstr "未能打开磁盘映象\n"
+
+#: ../src/cryptconfig-lib.c:1786
+#, c-format
+msgid "Extra key file does not exist\n"
+msgstr "额外键文件不存在\n"
+
+#: ../src/cryptconfig-lib.c:1790
+msgid "\nEnter the password for the extra key"
+msgstr "\n输入额外键的口令"
+
+#: ../src/cryptconfig-lib.c:1792
+#, c-format
+msgid "Failed to get extra key password\n"
+msgstr "未能获取额外键口令\n"
+
+#: ../src/cryptconfig-lib.c:1799
+#, c-format
+msgid "Failed to decrypt extra key\n"
+msgstr "未能解密额外键\n"
+
+#: ../src/pam_cryptpass.c:105
+msgid "Enter key file password"
+msgstr "输入密钥文件密码"
+

@@ -9,12 +9,12 @@ msgstr ""
 "Project-Id-Version: @PACKAGE@\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2007-02-01 19:57+0100\n"
-"PO-Revision-Date: 2005-11-08 12:26+8\n"
-"Last-Translator: Steve Beattie <steve@immunix.com>\n"
-"Language-Team: English\n"
+"PO-Revision-Date: 2001-07-17 16:27+0200\n"
+"Last-Translator: James Ogley <ogley@suse.co.uk>\n"
+"Language-Team: English <i18n@suse.de>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: 8-bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: ../src/cryptconfig.c:65 ../src/cryptconfig.c:1060
@@ -69,9 +69,8 @@ msgid ""
 msgstr ""
 
 #: ../src/cryptconfig.c:112 ../src/cryptconfig.c:534
-#, fuzzy
 msgid "Invalid image size\n"
-msgstr "Invalid release file"
+msgstr ""
 
 #: ../src/cryptconfig.c:118 ../src/cryptconfig.c:555
 #, c-format
@@ -79,9 +78,9 @@ msgid "The image_size must be at least %ld MBs for the chosen file system.\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:126
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to lookup user '%s'\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:133 ../src/cryptconfig.c:941
 #, c-format
@@ -97,9 +96,9 @@ msgid "image file must be an absolute path\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:159
-#, fuzzy, c-format
+#, c-format
 msgid "'%s' is not a directory\n"
-msgstr "Recurse into the directory"
+msgstr ""
 
 #: ../src/cryptconfig.c:169
 #, c-format
@@ -115,18 +114,17 @@ msgid "The existing key file must be an absolute path\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:186 ../src/cryptconfig.c:587 ../src/cryptconfig.c:1146
-#, fuzzy, c-format
+#, c-format
 msgid "%s does not exist\n"
-msgstr "Profile doesn't exist\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:198 ../src/cryptconfig.c:967
 msgid "The key file must be an absolute path\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:207
-#, fuzzy
 msgid "The key file directory does not exist\n"
-msgstr "Profile doesn't exist\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:214
 #, c-format
@@ -146,9 +144,9 @@ msgid "The specified image size is not large enough to hold the user's data\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:241
-#, fuzzy, c-format
+#, c-format
 msgid "Enter the password for %s"
-msgstr "Enter the password for the provider '%1':"
+msgstr ""
 
 #: ../src/cryptconfig.c:242
 #, c-format
@@ -158,9 +156,8 @@ msgstr ""
 #: ../src/cryptconfig.c:244 ../src/cryptconfig.c:447 ../src/cryptconfig.c:570
 #: ../src/cryptconfig.c:760 ../src/cryptconfig.c:774 ../src/cryptconfig.c:1092
 #: ../src/cryptconfig.c:1152
-#, fuzzy
 msgid "Failed to get password\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:251 ../src/cryptconfig.c:592
 #, c-format
@@ -172,9 +169,8 @@ msgid "Failed to get key data\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:261 ../src/cryptconfig.c:613 ../src/cryptconfig.c:1097
-#, fuzzy
 msgid "Failed to create image key\n"
-msgstr "unable to create work area\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:267 ../src/cryptconfig.c:1102
 msgid "Failed to set permissions for key file\n"
@@ -189,24 +185,23 @@ msgid ""
 msgstr ""
 
 #: ../src/cryptconfig.c:277 ../src/cryptconfig.c:630
-#, fuzzy
 msgid ""
 "\n"
 "Failed to create image\n"
-msgstr "unable to create work area\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:281 ../src/cryptconfig.c:475
+#, fuzzy
 msgid "Done\n"
-msgstr ""
+msgstr "Done"
 
 #: ../src/cryptconfig.c:285
 msgid "Failed to set permissions for new image\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:291 ../src/cryptconfig.c:309 ../src/cryptconfig.c:638
-#, fuzzy
 msgid "Failed to open image\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:297
 msgid "Failed to format image\n"
@@ -214,24 +209,20 @@ msgstr ""
 
 #: ../src/cryptconfig.c:304 ../src/cryptconfig.c:654
 #: ../src/cryptconfig-lib.c:1532
-#, fuzzy
 msgid "Failed to add extra key\n"
-msgstr "Failed to load bundles: "
+msgstr ""
 
 #: ../src/cryptconfig.c:316
-#, fuzzy
 msgid "Failed to create filesystem.\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:322
-#, fuzzy
 msgid "Failed to mount image\n"
-msgstr "Failed to load bundles: "
+msgstr ""
 
 #: ../src/cryptconfig.c:328
-#, fuzzy
 msgid "Failed to set new directory permissions\n"
-msgstr "Failed to parse bundle version '{0}'"
+msgstr ""
 
 #: ../src/cryptconfig.c:334
 #, c-format
@@ -239,17 +230,17 @@ msgid "Copying existing data from %s.  This may take some time... "
 msgstr ""
 
 #: ../src/cryptconfig.c:337
-#, fuzzy
 msgid ""
 "\n"
 "Failed to copy user data\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:341 ../src/cryptconfig.c:458 ../src/cryptconfig.c:634
 #: ../src/cryptconfig.c:649 ../src/cryptconfig.c:812 ../src/cryptconfig.c:894
 #: ../src/cryptconfig.c:1107 ../src/cryptconfig.c:1242
+#, fuzzy
 msgid "Done.\n"
-msgstr ""
+msgstr "Done"
 
 #: ../src/cryptconfig.c:347
 msgid "Failed to setup pam_mount\n"
@@ -267,9 +258,9 @@ msgstr ""
 #: ../src/cryptconfig.c:848 ../src/cryptconfig.c:920 ../src/cryptconfig.c:1013
 #: ../src/cryptconfig.c:1069 ../src/cryptconfig.c:1136
 #: ../src/cryptconfig.c:1216
-#, fuzzy, c-format
+#, c-format
 msgid "parsing failed: %s\n"
-msgstr "Transaction failed: "
+msgstr ""
 
 #: ../src/cryptconfig.c:413
 #, c-format
@@ -289,9 +280,8 @@ msgstr ""
 
 #. get the password
 #: ../src/cryptconfig.c:446
-#, fuzzy
 msgid "Enter a password for the partition"
-msgstr "Enter the password for the provider '%1':"
+msgstr ""
 
 #. format the device
 #: ../src/cryptconfig.c:452
@@ -299,16 +289,16 @@ msgid "Formatting device... "
 msgstr ""
 
 #: ../src/cryptconfig.c:454
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "\n"
 "Failed to format %s\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:463
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open %s\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #. create the filesystem
 #: ../src/cryptconfig.c:468
@@ -316,11 +306,10 @@ msgid "Creating file system on device...  "
 msgstr ""
 
 #: ../src/cryptconfig.c:471
-#, fuzzy
 msgid ""
 "\n"
 "Failed to create filesystem.\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:505
 #, fuzzy
@@ -341,23 +330,20 @@ msgid "%s already exists.  Use --force to overwrite.\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:562
-#, fuzzy
 msgid "Enter the password for the existing key file "
-msgstr "Enter the password for the provider '%1':"
+msgstr ""
 
 #: ../src/cryptconfig.c:564
-#, fuzzy
 msgid "Enter a password to encrypt the key file with"
-msgstr "Enter the password for the provider '%1':"
+msgstr ""
 
 #: ../src/cryptconfig.c:566
 msgid "Enter the new image password"
 msgstr ""
 
 #: ../src/cryptconfig.c:606
-#, fuzzy
 msgid "Failed to read key data\n"
-msgstr "Failed to load bundles: "
+msgstr ""
 
 #. format the image
 #: ../src/cryptconfig.c:643
@@ -365,21 +351,18 @@ msgid "Creating LUKS header... "
 msgstr ""
 
 #: ../src/cryptconfig.c:645
-#, fuzzy
 msgid ""
 "\n"
 "Failed to format device\n"
-msgstr "Failed to load bundles: "
+msgstr ""
 
 #: ../src/cryptconfig.c:661 ../src/cryptconfig.c:795 ../src/cryptconfig.c:1181
-#, fuzzy
 msgid "Failed to create map name\n"
-msgstr "unable to create work area\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:666
-#, fuzzy
 msgid "Failed to format device\n"
-msgstr "Failed to load bundles: "
+msgstr ""
 
 #: ../src/cryptconfig.c:672
 msgid "Failed create file system on mapped device\n"
@@ -390,14 +373,13 @@ msgid "The encrytped key for the image"
 msgstr ""
 
 #: ../src/cryptconfig.c:731
-#, fuzzy
 msgid "Invalid size\n"
-msgstr "Invalid username"
+msgstr ""
 
 #: ../src/cryptconfig.c:736
-#, fuzzy, c-format
+#, c-format
 msgid "Image file '%s' does not exist\n"
-msgstr "Profile doesn't exist\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:755 ../src/cryptconfig.c:1159
 msgid "Unable to access the specified key file\n"
@@ -416,19 +398,16 @@ msgid "Enter the image password"
 msgstr ""
 
 #: ../src/cryptconfig.c:783
-#, fuzzy
 msgid "Failed to resize image\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:788 ../src/cryptconfig.c:1174
-#, fuzzy
 msgid "Failed to open disk image\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:800 ../src/cryptconfig.c:1187
-#, fuzzy
 msgid "Failed to open device\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:807
 #, c-format
@@ -436,9 +415,9 @@ msgid "Failed to resize the file system on %s\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:861
-#, fuzzy, c-format
+#, c-format
 msgid "key file '%s' does not exist.\n"
-msgstr "Profile doesn't exist\n"
+msgstr ""
 
 #. get both passwords
 #: ../src/cryptconfig.c:866
@@ -475,23 +454,23 @@ msgstr ""
 
 #: ../src/cryptconfig.c:934 ../src/cryptconfig.c:1029
 #: ../src/cryptconfig-lib.c:1087 ../src/cryptconfig-lib.c:1159
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to lookup user %s\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig.c:957
 msgid "The image file must be an absolute path\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:973
-#, fuzzy, c-format
+#, c-format
 msgid "The image file '%s' does not exist\n"
-msgstr "Profile doesn't exist\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:978
-#, fuzzy, c-format
+#, c-format
 msgid "The key file '%s' does not exist\n"
-msgstr "Profile doesn't exist\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:984
 msgid "Failed to enable pam_mount\n"
@@ -529,35 +508,29 @@ msgid "The key file already exists.  Use --force to overwrite it.\n"
 msgstr ""
 
 #: ../src/cryptconfig.c:1086
-#, fuzzy
 msgid "Failed to generate key data\n"
-msgstr "unable to create work area\n"
+msgstr ""
 
 #: ../src/cryptconfig.c:1090
-#, fuzzy
 msgid "Enter a password for the new key"
-msgstr "Enter the password for the provider '%1':"
+msgstr ""
 
 #: ../src/cryptconfig.c:1192
-#, fuzzy, c-format
+#, c-format
 msgid "%s is now available on %s\n"
-msgstr "List the available bundles"
+msgstr ""
 
 #: ../src/cryptconfig.c:1226
-#, fuzzy
 msgid "Unable to find device\n"
-msgstr "%s: Unable to find "
+msgstr ""
 
 #: ../src/cryptconfig.c:1232
 msgid "Unable to close mapped device\n"
 msgstr ""
 
-# ###############################################################################
-# Old yast2-agents.po
 #: ../src/cryptconfig.c:1238
-#, fuzzy
 msgid "Unable to close loop device\n"
-msgstr "Unable to open"
+msgstr ""
 
 #: ../src/cryptconfig.c:1265
 #, c-format
@@ -620,74 +593,63 @@ msgid "You must be root to run this command\n"
 msgstr ""
 
 #: ../src/cryptconfig-lib.c:144
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to open %s: %s\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:150
-#, fuzzy
 msgid "Failed to create temp file\n"
-msgstr "unable to create work area\n"
+msgstr ""
 
-# ###############################################################################
-# Old yast2-agents.po
 #: ../src/cryptconfig-lib.c:275
-#, fuzzy
 msgid "Failed to open pam"
-msgstr "Unable to open"
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:322
-#, fuzzy
 msgid "Failed to load "
-msgstr "Failed to load bundles: "
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:322 ../src/cryptconfig-lib.c:328
 msgid ", using default list\n"
 msgstr ""
 
 #: ../src/cryptconfig-lib.c:328
-#, fuzzy
 msgid "Failed to load service list from "
-msgstr "Failed to load bundles: "
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:359 ../src/cryptconfig-lib.c:477
-#, fuzzy
 msgid "Failed to get pam services list\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:372
 #, c-format
 msgid "'%s' doesn't exist, skipping\n"
 msgstr ""
 
-# ###############################################################################
-# Old yast2-agents.po
 #: ../src/cryptconfig-lib.c:378
-#, fuzzy, c-format
+#, c-format
 msgid "Unable to open '%s', skipping\n"
-msgstr "Unable to open"
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:487
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to replace %s\n"
-msgstr "Failed to parse: %s."
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:1358
-#, fuzzy, c-format
+#, c-format
 msgid "copy failed: %s\n"
-msgstr "DBI Execution failed: %s"
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:1514
-#, fuzzy
 msgid "Extra key file does not exist\n"
-msgstr "Profile doesn't exist\n"
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:1518
-#, fuzzy
 msgid ""
 "\n"
 "Enter the password for the extra key"
-msgstr "Enter the password for the provider '%1':"
+msgstr ""
 
 #: ../src/cryptconfig-lib.c:1520
 msgid "Failed to get extra key password\n"

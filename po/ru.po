@@ -1,0 +1,761 @@
+# Copyright (C) 2006 SuSE Linux Products GmbH, Nuernberg
+# This file is distributed under the same license as the package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cryptconfig\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-25 20:21-0400\n"
+"PO-Revision-Date: 2008-11-17 16:09\n"
+"Last-Translator: Novell Language <language@novell.com>\n"
+"Language-Team: Novell Language <language@novell.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/cryptconfig.c:78 ../src/cryptconfig.c:1096
+msgid "Don't verify the passphrase"
+msgstr "Не проверять контрольную фразу"
+
+#: ../src/cryptconfig.c:79
+msgid "Don't setup pam_mount"
+msgstr "Не настраивать pam_mount"
+
+#: ../src/cryptconfig.c:80
+msgid "Don't copy user's existing data"
+msgstr "Не копировать существующие данные пользователя"
+
+#: ../src/cryptconfig.c:81 ../src/cryptconfig.c:559
+msgid "Use random data to fill the image"
+msgstr "Для заполнения образа использовать случайные данные"
+
+#: ../src/cryptconfig.c:82
+msgid "Overwrite existing image and key"
+msgstr "Перезаписать существующие образ и ключ"
+
+#: ../src/cryptconfig.c:83
+msgid "Remove the old home directory after data is copied"
+msgstr "Удалить основной каталог после копирования данных"
+
+#: ../src/cryptconfig.c:85 ../src/cryptconfig.c:944
+msgid "Replace an existing user entry in pam_mount"
+msgstr "Заменить существующую запись пользователя в pam_mount"
+
+#: ../src/cryptconfig.c:86 ../src/cryptconfig.c:1174
+msgid "The filesystem type. The default is ext3"
+msgstr "Тип файловой системы. Значение по умолчанию - ext3"
+
+#: ../src/cryptconfig.c:88
+msgid "The home directory image. The default is $USER_HOME.img"
+msgstr "Образ домашнего каталога. Значение по умолчанию - $USER_HOME.img"
+
+#: ../src/cryptconfig.c:90
+msgid "The image key file. The default is $USER_HOME.key"
+msgstr "Файл ключа образа. Значение по умолчанию - $USER_HOME.key"
+
+#: ../src/cryptconfig.c:92 ../src/cryptconfig.c:564
+msgid "Use an existing key file instead of generating a new one"
+msgstr "Использовать существующий файл ключа вместо создания нового"
+
+#: ../src/cryptconfig.c:94 ../src/cryptconfig.c:566
+msgid "Add an additional key file to the image"
+msgstr "Добавить в образ дополнительный файл ключа"
+
+#: ../src/cryptconfig.c:117
+#, c-format
+msgid "Using an encrypted home directory for root is not supported\n"
+msgstr "Использование зашифрованного основного каталога как корневого не поддерживается\n"
+
+#: ../src/cryptconfig.c:124 ../src/cryptconfig.c:475 ../src/cryptconfig.c:601
+#: ../src/cryptconfig.c:1199 ../src/cryptconfig.c:1332
+#, c-format
+msgid "%s is not a supported file system\nSupported file systems are: %s\n"
+msgstr "Файловая система %s не поддерживается\nПоддерживаются следующие файловые системы: %s\n"
+
+#: ../src/cryptconfig.c:132 ../src/cryptconfig.c:588
+#, c-format
+msgid "Invalid image size\n"
+msgstr "Неверный размер образа\n"
+
+#: ../src/cryptconfig.c:138 ../src/cryptconfig.c:609
+#, c-format
+msgid "The image_size must be at least %lld MBs for the chosen file system.\n"
+msgstr "Для выбранной файловой системы размер_образа должен быть не меньше %lld Мб.\n"
+
+#: ../src/cryptconfig.c:146 ../src/cryptconfig.c:1325
+#, c-format
+msgid "Failed to lookup user '%s'\n"
+msgstr "Не удалось найти пользователя '%s'\n"
+
+#: ../src/cryptconfig.c:153 ../src/cryptconfig.c:977
+#, c-format
+msgid "pam_mount is already setup for %s.  Use --replace to replace the existing entry\n"
+msgstr "Для %s pam_mount уже настроен.  Используйте --replace для замены существующей записи\n"
+
+#: ../src/cryptconfig.c:158 ../src/cryptconfig.c:982
+#, c-format
+msgid "Failed to remove old pam_mount entry\n"
+msgstr "Не удалось удалить старую запись pam_mount\n"
+
+#: ../src/cryptconfig.c:172
+#, c-format
+msgid "image file must be an absolute path\n"
+msgstr "для файла образа следует указывать абсолютный путь\n"
+
+#: ../src/cryptconfig.c:179
+#, c-format
+msgid "'%s' is not a directory\n"
+msgstr "'%s' не является каталогом\n"
+
+#: ../src/cryptconfig.c:186 ../src/cryptconfig.c:617
+#, c-format
+msgid "Not enough space to create %s\n"
+msgstr "Недостаточно места для содания %s\n"
+
+#: ../src/cryptconfig.c:196
+#, c-format
+msgid "%s already exists.  Use --force to overwrite it.\n"
+msgstr "%s уже существует.  Используйте --force для его перезаписи.\n"
+
+#: ../src/cryptconfig.c:203 ../src/cryptconfig.c:638
+#, c-format
+msgid "You can't specify both --key-file and --existing-key-file\n"
+msgstr "Нельзя одновременно указывать --key-file и --existing-key-file\n"
+
+#: ../src/cryptconfig.c:208 ../src/cryptconfig.c:643
+#, c-format
+msgid "The existing key file must be an absolute path\n"
+msgstr "Для существующего файла ключа следует указывать абсолютный путь\n"
+
+#: ../src/cryptconfig.c:213 ../src/cryptconfig.c:648 ../src/cryptconfig.c:1192
+#, c-format
+msgid "%s does not exist\n"
+msgstr "%s не существует\n"
+
+#: ../src/cryptconfig.c:225 ../src/cryptconfig.c:1003
+#, c-format
+msgid "The key file must be an absolute path\n"
+msgstr "Для файла ключа следует указывать абсолютный путь\n"
+
+#: ../src/cryptconfig.c:234
+#, c-format
+msgid "The key file directory does not exist\n"
+msgstr "Каталог файла ключа не существует\n"
+
+#: ../src/cryptconfig.c:241
+#, c-format
+msgid "'%s' already exists.  Use --force to overwrite it.\n"
+msgstr "'%s' уже существует.  Используйте --force для его перезаписи.\n"
+
+#: ../src/cryptconfig.c:247
+#, c-format
+msgid "Skipping data copy since user's home directory does not exist\n"
+msgstr "Копирование данных пропускается, так как пользователь не существует\n"
+
+#: ../src/cryptconfig.c:255
+#, c-format
+msgid "There is not enough disk space left to copy existing data\n"
+msgstr "Для копирования существующих данных оставшегося на диске места недостаточно\n"
+
+#: ../src/cryptconfig.c:260
+#, c-format
+msgid "The specified image size is not large enough to hold the user's data\n"
+msgstr "Указанный размер образа недостаточен для размещения данных пользователя\n"
+
+#: ../src/cryptconfig.c:265
+#, c-format
+msgid "Enter the password for %s"
+msgstr "Введите пароль для %s"
+
+#: ../src/cryptconfig.c:266
+#, c-format
+msgid "Enter %s's password"
+msgstr "Введите пароль %s"
+
+#: ../src/cryptconfig.c:268 ../src/cryptconfig.c:495 ../src/cryptconfig.c:631
+#: ../src/cryptconfig.c:1128 ../src/cryptconfig-lib.c:1718
+#, c-format
+msgid "Failed to get password\n"
+msgstr "Не удалось получить пароль\n"
+
+#: ../src/cryptconfig.c:275 ../src/cryptconfig.c:653
+#, c-format
+msgid "Unable to decrypt %s with the supplied password\n"
+msgstr "Не удалось расшифровать %s при помощи предоставленного пароля\n"
+
+#: ../src/cryptconfig.c:280
+#, c-format
+msgid "Failed to get key data\n"
+msgstr "Не удалось получить данные ключа\n"
+
+#: ../src/cryptconfig.c:285 ../src/cryptconfig.c:674 ../src/cryptconfig.c:1133
+#, c-format
+msgid "Failed to create image key\n"
+msgstr "Не удалось создать ключ образа\n"
+
+#: ../src/cryptconfig.c:291 ../src/cryptconfig.c:1138
+#, c-format
+msgid "Failed to set permissions for key file\n"
+msgstr "Не удалось задать разрешения для файла ключа\n"
+
+#. create and set permissions for our new image
+#. create the image file and fill it with zeros or random data
+#: ../src/cryptconfig.c:297 ../src/cryptconfig.c:687
+#, c-format
+msgid "\nCreating disk image... "
+msgstr "\nСоздание образа диска... "
+
+#: ../src/cryptconfig.c:301 ../src/cryptconfig.c:691
+#, c-format
+msgid "\nFailed to create image\n"
+msgstr "\nНе удалось создать образ\n"
+
+#: ../src/cryptconfig.c:305 ../src/cryptconfig.c:523
+#, c-format
+msgid "Done\n"
+msgstr "Готово\n"
+
+#: ../src/cryptconfig.c:309
+#, c-format
+msgid "Failed to set permissions for new image\n"
+msgstr "Не удалось задать разрешения для нового образа\n"
+
+#: ../src/cryptconfig.c:315 ../src/cryptconfig.c:333 ../src/cryptconfig.c:699
+#: ../src/cryptconfig.c:1207
+#, c-format
+msgid "Failed to open image\n"
+msgstr "Не удалось открыть образ\n"
+
+#: ../src/cryptconfig.c:321
+#, c-format
+msgid "Failed to format image\n"
+msgstr "Не удалось отформатировать образ\n"
+
+#: ../src/cryptconfig.c:328 ../src/cryptconfig.c:715
+#: ../src/cryptconfig-lib.c:1804
+#, c-format
+msgid "Failed to add extra key\n"
+msgstr "Не удалось добавить дополнительный ключ\n"
+
+#: ../src/cryptconfig.c:340
+#, c-format
+msgid "Failed to create filesystem.\n"
+msgstr "Не удалось создать файловую систему.\n"
+
+#: ../src/cryptconfig.c:346 ../src/cryptconfig.c:1357
+#, c-format
+msgid "Failed to mount image\n"
+msgstr "Не удалось смонтировать образ\n"
+
+#: ../src/cryptconfig.c:352
+#, c-format
+msgid "Failed to set new directory permissions\n"
+msgstr "Не удалось задать разрешения для нового каталога\n"
+
+#: ../src/cryptconfig.c:358
+#, c-format
+msgid "Copying existing data from %s.  This may take some time... "
+msgstr "Копирование существующих данных с %s.  Это может занять некоторое время…"
+
+#: ../src/cryptconfig.c:360
+#, c-format
+msgid "\nFailed to copy user data\n"
+msgstr "\nНе удалось скопировать данные пользователя\n"
+
+#: ../src/cryptconfig.c:374 ../src/cryptconfig.c:506 ../src/cryptconfig.c:695
+#: ../src/cryptconfig.c:710 ../src/cryptconfig.c:827 ../src/cryptconfig.c:908
+#: ../src/cryptconfig.c:1143 ../src/cryptconfig.c:1281
+#: ../src/cryptconfig.c:1375
+#, c-format
+msgid "Done.\n"
+msgstr "Готово.\n"
+
+#: ../src/cryptconfig.c:387
+#, c-format
+msgid "Failed to setup pam_mount\n"
+msgstr "Не удалось настроить pam_mount\n"
+
+#: ../src/cryptconfig.c:439 ../src/cryptconfig.c:558 ../src/cryptconfig.c:853
+msgid "Don't verify the new password"
+msgstr "Не проверять новый пароль"
+
+#: ../src/cryptconfig.c:440
+msgid "The filesystem type, defaults to ext3"
+msgstr "Тип файловой системы, по умолчанию - ext3"
+
+#: ../src/cryptconfig.c:448 ../src/cryptconfig.c:574 ../src/cryptconfig.c:786
+#: ../src/cryptconfig.c:861 ../src/cryptconfig.c:956 ../src/cryptconfig.c:1049
+#: ../src/cryptconfig.c:1105 ../src/cryptconfig.c:1182
+#: ../src/cryptconfig.c:1249 ../src/cryptconfig.c:1314
+#, c-format
+msgid "parsing failed: %s\n"
+msgstr "сбой при анализе: %s\n"
+
+#: ../src/cryptconfig.c:462
+#, c-format
+msgid "%s is not a block device\n"
+msgstr "%s не является устройством с блочным доступом\n"
+
+#: ../src/cryptconfig.c:468
+#, c-format
+msgid "%s is currently mounted\n"
+msgstr "%s в настоящий момент смонтирован\n"
+
+#. get the password
+#: ../src/cryptconfig.c:494
+msgid "Enter a password for the partition"
+msgstr "Введите пароль для раздела"
+
+#. format the device
+#: ../src/cryptconfig.c:500
+#, c-format
+msgid "Formatting device... "
+msgstr "Форматирование устройства…"
+
+#: ../src/cryptconfig.c:502
+#, c-format
+msgid "\nFailed to format %s\n"
+msgstr "\nНе удалось отформатировать %s\n"
+
+#: ../src/cryptconfig.c:511
+#, c-format
+msgid "Failed to open %s\n"
+msgstr "Не удалось открыть %s\n"
+
+#. create the filesystem
+#: ../src/cryptconfig.c:516
+#, c-format
+msgid "Creating file system on device...  "
+msgstr "Создание файловой системы устройства…"
+
+#: ../src/cryptconfig.c:519
+#, c-format
+msgid "\nFailed to create filesystem.\n"
+msgstr "\nНе удалось создать файловую систему.\n"
+
+#: ../src/cryptconfig.c:560
+msgid "Overwrite an existing image"
+msgstr "Перезаписать существующий образ"
+
+#: ../src/cryptconfig.c:561 ../src/cryptconfig.c:1173
+msgid "The image key file"
+msgstr "Файл ключа образа"
+
+#: ../src/cryptconfig.c:562
+msgid "The file system type, defaults to ext3"
+msgstr "Тип файловой системы, по умолчанию - ext3"
+
+#: ../src/cryptconfig.c:594 ../src/cryptconfig.c:662
+#, c-format
+msgid "%s already exists.  Use --force to overwrite.\n"
+msgstr "%s уже существует.  Используйте --force для перезаписи.\n"
+
+#: ../src/cryptconfig.c:623
+msgid "Enter the password for the existing key file "
+msgstr "Введите пароль для существующего файла ключа"
+
+#: ../src/cryptconfig.c:625
+msgid "Enter a password to encrypt the key file with"
+msgstr "Введите пароль для шифрования файла ключа при помощи"
+
+#: ../src/cryptconfig.c:627
+msgid "Enter the new image password"
+msgstr "Введите пароль для нового образа"
+
+#: ../src/cryptconfig.c:667
+#, c-format
+msgid "Failed to read key data\n"
+msgstr "Не удалось считать данные ключа\n"
+
+#. format the image
+#: ../src/cryptconfig.c:704
+#, c-format
+msgid "Creating LUKS header... "
+msgstr "Создание заголовка LUKS…"
+
+#: ../src/cryptconfig.c:706
+#, c-format
+msgid "\nFailed to format device\n"
+msgstr "\nНе удалось отформатировать устройство\n"
+
+#: ../src/cryptconfig.c:722 ../src/cryptconfig-lib.c:1706
+#, c-format
+msgid "Failed to create map name\n"
+msgstr "Не удалось создать имя карты сопоставления\n"
+
+#: ../src/cryptconfig.c:727 ../src/cryptconfig-lib.c:1747
+#, c-format
+msgid "Failed to open device\n"
+msgstr "Не удалось открыть устройство\n"
+
+#: ../src/cryptconfig.c:733
+#, c-format
+msgid "Failed create file system on mapped device\n"
+msgstr "Не удалось создать файловую систему на сопоставленном устройстве\n"
+
+#: ../src/cryptconfig.c:778
+msgid "The encrytped key for the image"
+msgstr "Зашифрованный ключ для образа"
+
+#: ../src/cryptconfig.c:799
+#, c-format
+msgid "Invalid size\n"
+msgstr "Неверный размер\n"
+
+#: ../src/cryptconfig.c:804
+#, c-format
+msgid "Image file '%s' does not exist\n"
+msgstr "Файл образа '%s' не существует\n"
+
+#: ../src/cryptconfig.c:810
+#, c-format
+msgid "Failed to resize image\n"
+msgstr "Не удалось изменить размер образа\n"
+
+#: ../src/cryptconfig.c:816 ../src/cryptconfig.c:1352
+#, c-format
+msgid "Failed to unlock image\n"
+msgstr "Не удалось разблокировать образ\n"
+
+#: ../src/cryptconfig.c:822
+#, c-format
+msgid "Failed to resize the file system on %s\n"
+msgstr "Не удалось изменить размер файловой системы на %s\n"
+
+#: ../src/cryptconfig.c:874
+#, c-format
+msgid "Failed to stat '%s': %s\n"
+msgstr "Не удалось запустить '%s': %s\n"
+
+#. get both passwords
+#: ../src/cryptconfig.c:879
+msgid "Enter the EXISTING password"
+msgstr "Введите СУЩЕСТВУЮЩИЙ пароль"
+
+#: ../src/cryptconfig.c:880
+#, c-format
+msgid "Failed to get existing password\n"
+msgstr "Не удалось получить существующий пароль\n"
+
+#: ../src/cryptconfig.c:885
+msgid "Enter the NEW password"
+msgstr "Введите НОВЫЙ пароль"
+
+#: ../src/cryptconfig.c:886
+#, c-format
+msgid "Failed to get new password\n"
+msgstr "Не удалось получить новый пароль\n"
+
+#: ../src/cryptconfig.c:893
+#, c-format
+msgid "Failed to decrypt key with old password.\n"
+msgstr "Не удалось расшифровать ключ при помощи старого пароля.\n"
+
+#: ../src/cryptconfig.c:898
+#, c-format
+msgid "Failed to encrypt new key\n"
+msgstr "Не удалось зашифровать новый ключ\n"
+
+#: ../src/cryptconfig.c:903
+#, c-format
+msgid "Failed to retain permissions for %s\n"
+msgstr "Не удалось сохранить разрешения для %s\n"
+
+#: ../src/cryptconfig.c:946
+msgid "The user's home image file, defaults to /home/$USER.img"
+msgstr "Домашний файл образа пользователя, по умолчанию - /home/$USER.img "
+
+#: ../src/cryptconfig.c:948
+msgid "The user's image key file, defaults to /home/$USER.key"
+msgstr "Файл ключа для образа пользователя, по умолчанию - /home/$USER.key"
+
+#: ../src/cryptconfig.c:970 ../src/cryptconfig.c:1065
+#: ../src/cryptconfig-lib.c:1148
+#, c-format
+msgid "Failed to lookup user %s\n"
+msgstr "Не удалось найти пользователя %s\n"
+
+#: ../src/cryptconfig.c:993
+#, c-format
+msgid "The image file must be an absolute path\n"
+msgstr "Для файла образа следует указывать абсолютный путь\n"
+
+#: ../src/cryptconfig.c:1009
+#, c-format
+msgid "The image file '%s' does not exist\n"
+msgstr "Файл образа '%s' не существует\n"
+
+#: ../src/cryptconfig.c:1014
+#, c-format
+msgid "The key file '%s' does not exist\n"
+msgstr "Файл ключа '%s' не существует\n"
+
+#: ../src/cryptconfig.c:1020
+#, c-format
+msgid "Failed to enable pam_mount\n"
+msgstr "Не удалось включить pam_mount\n"
+
+#: ../src/cryptconfig.c:1022
+#, c-format
+msgid "pam_mount is now enabled for %s\n"
+msgstr "pam_mount теперь включен для %s\n"
+
+#: ../src/cryptconfig.c:1041
+msgid "Disable pam_mount for all users"
+msgstr "Отключить pam_mount для всех пользователей"
+
+#: ../src/cryptconfig.c:1073
+#, c-format
+msgid "Failed to disable pam_mount\n"
+msgstr "Не удалось отключить pam_mount\n"
+
+#: ../src/cryptconfig.c:1075
+#, c-format
+msgid "pam_mount is disabled for all users\n"
+msgstr "pam_mount отключен для всех пользователей\n"
+
+#: ../src/cryptconfig.c:1077
+#, c-format
+msgid "pam_mount is disabled for %s\n"
+msgstr "pam_mount отключен для %s\n"
+
+#: ../src/cryptconfig.c:1097
+msgid "Overwrite an existing key"
+msgstr "Перезаписать существующий ключ"
+
+#: ../src/cryptconfig.c:1117
+#, c-format
+msgid "The key file already exists.  Use --force to overwrite it.\n"
+msgstr "Файл ключа уже существует.  Используйте --force для его перезаписи.\n"
+
+#: ../src/cryptconfig.c:1122
+#, c-format
+msgid "Failed to generate key data\n"
+msgstr "Не удалось сгенерировать данные ключа\n"
+
+#: ../src/cryptconfig.c:1126
+msgid "Enter a password for the new key"
+msgstr "Введите пароль для нового ключа"
+
+#: ../src/cryptconfig.c:1172
+msgid "Mount the image at the specified directory"
+msgstr "Монтировать образ у казанный каталог"
+
+#: ../src/cryptconfig.c:1214
+#, c-format
+msgid "%s is not a directory\n"
+msgstr "'%s' не является каталогом\n"
+
+#: ../src/cryptconfig.c:1219
+#, c-format
+msgid "Failed to mount device\n"
+msgstr "Не удалось смонтировать устройство\n"
+
+#: ../src/cryptconfig.c:1223
+#, c-format
+msgid "%s is now mounted at %s\n"
+msgstr "%s теперь смонтирован на %s\n"
+
+#: ../src/cryptconfig.c:1225
+#, c-format
+msgid "%s is now available as device %s\n"
+msgstr "%s теперь доступен как устройство %s\n"
+
+#: ../src/cryptconfig.c:1259
+#, c-format
+msgid "Unable to find device\n"
+msgstr "Не удалось найти устройство\n"
+
+#: ../src/cryptconfig.c:1265
+#, c-format
+msgid "Failed to umount: %s\n"
+msgstr "Не удалось отменить монтировку: %s\n"
+
+#: ../src/cryptconfig.c:1271
+#, c-format
+msgid "Unable to close mapped device\n"
+msgstr "Не удалось закрыть сопоставленное устройство\n"
+
+#: ../src/cryptconfig.c:1277
+#, c-format
+msgid "Unable to close loop device\n"
+msgstr "Не удалось закрыть петлевое устройство\n"
+
+#: ../src/cryptconfig.c:1306
+msgid "The filesystem type. The default is ext3."
+msgstr "Тип файловой системы. Значение по умолчанию: ext3."
+
+#: ../src/cryptconfig.c:1342
+#, c-format
+msgid "Pam mount is not setup for '%s'\n"
+msgstr "Монтирование Pam не настроено для '%s'\n"
+
+#: ../src/cryptconfig.c:1347
+#, c-format
+msgid "%s is currently in use.  Unable to continue.\n"
+msgstr "%s в данный момент используется.  Продолжение невозможно.\n"
+
+#: ../src/cryptconfig.c:1364
+#, c-format
+msgid "Failed to add %s\n"
+msgstr "Не удалось добавить %s\n"
+
+#: ../src/cryptconfig.c:1369
+#, c-format
+msgid "Failed to remove %s\n"
+msgstr "Не удалось удалить %s\n"
+
+#: ../src/cryptconfig.c:1420
+#, c-format
+msgid "\nusage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n\nCOMMANDS\n"
+msgstr "\nиспользование: %s [COMMAND] [COMMAND-OPTIONS] арг1 арг2...\n \n КОМАНДЫ\n"
+
+#: ../src/cryptconfig.c:1423
+#, c-format
+msgid "\nYou can run %s [COMMAND] --help for more information on a command.\n"
+msgstr "\nДля получения дополнительных сведений о команде выполните %s [COMMAND] --help.\n"
+
+#: ../src/cryptconfig.c:1469
+msgid "Create an encrypted home directory image and image key"
+msgstr "Создать зашифрованные образ домашнего каталога и ключ образа"
+
+#: ../src/cryptconfig.c:1472
+msgid "Enlarge a disk image and it's file system"
+msgstr "Увеличить образ диска и его файловую систему"
+
+#: ../src/cryptconfig.c:1475
+msgid "Change the password used to encrypt/decrypt a key file"
+msgstr "Сменить пароль, используемый для шифрования и дешифрования файла ключа"
+
+#: ../src/cryptconfig.c:1478
+msgid "Enable pam_mount with encrypted home directories"
+msgstr "Включить pam_mount с зашифрованными домашними каталогами"
+
+#: ../src/cryptconfig.c:1481
+msgid "Disable pam_mount with encrypted home directories"
+msgstr "Отключить pam_mount с зашифрованными домашними каталогами"
+
+#: ../src/cryptconfig.c:1484
+msgid "Create an arbitrary LUKS image"
+msgstr "Создать произвольный образ LUKS"
+
+#: ../src/cryptconfig.c:1487
+msgid "Create a LUKS partition on a device"
+msgstr "Создать на устройстве раздел LUKS"
+
+#: ../src/cryptconfig.c:1490
+msgid "Create a new key that can be added to a LUKS image"
+msgstr "Создать новый ключ, который можно будет добавить в образ LUKS"
+
+#: ../src/cryptconfig.c:1493
+msgid "Open a LUKS image"
+msgstr "Открыть образ LUKS"
+
+#: ../src/cryptconfig.c:1496
+msgid "Close devices using a LUKS image"
+msgstr "Закрыть устройства при помощи образа LUKS"
+
+#: ../src/cryptconfig.c:1499
+msgid "Add public data"
+msgstr "Добавить общие данные"
+
+#: ../src/cryptconfig.c:1502
+msgid "Remove public data"
+msgstr "Удалить общие данные"
+
+#: ../src/cryptconfig.c:1513
+#, c-format
+msgid "You must be root to run this command\n"
+msgstr "Для выполнения этой команды необходимы полномочия суперпользователя\n"
+
+#: ../src/cryptconfig-lib.c:113
+#, c-format
+msgid "move failed: %s\n"
+msgstr "сбой при перемещении: %s\n"
+
+#: ../src/cryptconfig-lib.c:278 ../src/cryptconfig-lib.c:317
+#, c-format
+msgid "Failed to load "
+msgstr "Не удалось загрузить"
+
+#: ../src/cryptconfig-lib.c:284 ../src/cryptconfig-lib.c:323
+#, c-format
+msgid "Failed to load service list from "
+msgstr "Не удалось загрузить список служб с"
+
+#: ../src/cryptconfig-lib.c:358
+#, c-format
+msgid "Failed to get pam services list\n"
+msgstr "Не удалось получить список служб PAM\n"
+
+#: ../src/cryptconfig-lib.c:600
+#, c-format
+msgid "key file is too large\n"
+msgstr "слишком большой файл ключа\n"
+
+#: ../src/cryptconfig-lib.c:1120
+#, c-format
+msgid "Failed to create temp file\n"
+msgstr "Не удалось создать временный файл\n"
+
+#: ../src/cryptconfig-lib.c:1494
+#, c-format
+msgid "g_dir_open: %s\n"
+msgstr "g_dir_open: %s\n"
+
+#: ../src/cryptconfig-lib.c:1512
+#, c-format
+msgid "copy failed: %s\n"
+msgstr "сбой копирования: %s\n"
+
+#: ../src/cryptconfig-lib.c:1712
+#, c-format
+msgid "The map device for this image is in use\n"
+msgstr "Сопоставляемое устройство для этого образа используется\n"
+
+#: ../src/cryptconfig-lib.c:1716
+msgid "Enter the key file password"
+msgstr "Введите пароль для файла ключа"
+
+#: ../src/cryptconfig-lib.c:1716
+msgid "Enter the image password"
+msgstr "Введите пароль для образа"
+
+#: ../src/cryptconfig-lib.c:1725
+#, c-format
+msgid "Unable to access the specified key file\n"
+msgstr "Не удается получить доступ к указанному файлу ключа\n"
+
+#: ../src/cryptconfig-lib.c:1730
+#, c-format
+msgid "Failed to decrypt key file with the provided password\n"
+msgstr "Не удалось расшифровать файл ключа при помощи предоставленного пароля\n"
+
+#: ../src/cryptconfig-lib.c:1741
+#, c-format
+msgid "Failed to open disk image\n"
+msgstr "Не удалось открыть образ диска\n"
+
+#: ../src/cryptconfig-lib.c:1786
+#, c-format
+msgid "Extra key file does not exist\n"
+msgstr "Файл дополнительного ключа не существует\n"
+
+#: ../src/cryptconfig-lib.c:1790
+msgid "\nEnter the password for the extra key"
+msgstr "\nВведите пароль для дополнительного ключа"
+
+#: ../src/cryptconfig-lib.c:1792
+#, c-format
+msgid "Failed to get extra key password\n"
+msgstr "Не удалось получить пароль дополнительного ключа\n"
+
+#: ../src/cryptconfig-lib.c:1799
+#, c-format
+msgid "Failed to decrypt extra key\n"
+msgstr "Не удалось расшифровать дополнительный ключ\n"
+
+#: ../src/pam_cryptpass.c:105
+msgid "Enter key file password"
+msgstr "Ввести пароль файла ключа"
+

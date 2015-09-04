@@ -1,0 +1,761 @@
+# Copyright (C) 2006 SuSE Linux Products GmbH, Nuernberg
+# This file is distributed under the same license as the package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cryptconfig\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-25 20:21-0400\n"
+"PO-Revision-Date: 2008-12-03 10:33\n"
+"Last-Translator: Novell Language <language@novell.com>\n"
+"Language-Team: Novell Language <language@novell.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/cryptconfig.c:78 ../src/cryptconfig.c:1096
+msgid "Don't verify the passphrase"
+msgstr "De wachtzin niet controleren"
+
+#: ../src/cryptconfig.c:79
+msgid "Don't setup pam_mount"
+msgstr "pam_mount niet instellen"
+
+#: ../src/cryptconfig.c:80
+msgid "Don't copy user's existing data"
+msgstr "Bestaande gegevens van gebruiker niet kopiëren"
+
+#: ../src/cryptconfig.c:81 ../src/cryptconfig.c:559
+msgid "Use random data to fill the image"
+msgstr "Image vullen met willekeurige gegevens"
+
+#: ../src/cryptconfig.c:82
+msgid "Overwrite existing image and key"
+msgstr "Bestaande image en sleutel overschrijven"
+
+#: ../src/cryptconfig.c:83
+msgid "Remove the old home directory after data is copied"
+msgstr "De oude home directory verwijderen nadat de gegevens zijn gekopieerd"
+
+#: ../src/cryptconfig.c:85 ../src/cryptconfig.c:944
+msgid "Replace an existing user entry in pam_mount"
+msgstr "Een bestaand gebruikersitem in pam_mount vervangen"
+
+#: ../src/cryptconfig.c:86 ../src/cryptconfig.c:1174
+msgid "The filesystem type. The default is ext3"
+msgstr "Het type bestandssysteem. Standaard is ext3"
+
+#: ../src/cryptconfig.c:88
+msgid "The home directory image. The default is $USER_HOME.img"
+msgstr "Image van de home directory. Standaard is $USER_HOME.img"
+
+#: ../src/cryptconfig.c:90
+msgid "The image key file. The default is $USER_HOME.key"
+msgstr "Het sleutelbestand voor de image. Standaard is $USER_HOME.key"
+
+#: ../src/cryptconfig.c:92 ../src/cryptconfig.c:564
+msgid "Use an existing key file instead of generating a new one"
+msgstr "Gebruik een bestaand sleutelbestand in plaats van een nieuwe te genereren"
+
+#: ../src/cryptconfig.c:94 ../src/cryptconfig.c:566
+msgid "Add an additional key file to the image"
+msgstr "Voeg een extra sleutelbestand toe aan de image"
+
+#: ../src/cryptconfig.c:117
+#, c-format
+msgid "Using an encrypted home directory for root is not supported\n"
+msgstr "Een gecodeerde home directory gebruiken als hoofdmap, wordt niet ondersteund\n"
+
+#: ../src/cryptconfig.c:124 ../src/cryptconfig.c:475 ../src/cryptconfig.c:601
+#: ../src/cryptconfig.c:1199 ../src/cryptconfig.c:1332
+#, c-format
+msgid "%s is not a supported file system\nSupported file systems are: %s\n"
+msgstr "%s is geen ondersteund bestandssysteem\nOndersteunde bestandssystemen zijn: %s\n"
+
+#: ../src/cryptconfig.c:132 ../src/cryptconfig.c:588
+#, c-format
+msgid "Invalid image size\n"
+msgstr "Ongeldige image-grootte\n"
+
+#: ../src/cryptconfig.c:138 ../src/cryptconfig.c:609
+#, c-format
+msgid "The image_size must be at least %lld MBs for the chosen file system.\n"
+msgstr "De image_size moet ten minste %lld MB zijn voor het gekozen bestandssysteem.\n"
+
+#: ../src/cryptconfig.c:146 ../src/cryptconfig.c:1325
+#, c-format
+msgid "Failed to lookup user '%s'\n"
+msgstr "Gebruiker '%s' niet gevonden\n"
+
+#: ../src/cryptconfig.c:153 ../src/cryptconfig.c:977
+#, c-format
+msgid "pam_mount is already setup for %s.  Use --replace to replace the existing entry\n"
+msgstr "pam_mount is al ingesteld voor %s. Gebruik --replace om het bestaande item te vervangen\n"
+
+#: ../src/cryptconfig.c:158 ../src/cryptconfig.c:982
+#, c-format
+msgid "Failed to remove old pam_mount entry\n"
+msgstr "Verwijderen oud pam_mount-item mislukt\n"
+
+#: ../src/cryptconfig.c:172
+#, c-format
+msgid "image file must be an absolute path\n"
+msgstr "Image-bestand moet een absoluut pad zijn\n"
+
+#: ../src/cryptconfig.c:179
+#, c-format
+msgid "'%s' is not a directory\n"
+msgstr "'%s' is geen directory\n"
+
+#: ../src/cryptconfig.c:186 ../src/cryptconfig.c:617
+#, c-format
+msgid "Not enough space to create %s\n"
+msgstr "Niet genoeg ruimte om %s te maken\n"
+
+#: ../src/cryptconfig.c:196
+#, c-format
+msgid "%s already exists.  Use --force to overwrite it.\n"
+msgstr "%s bestaat al. Gebruik --force om te overschrijven.\n"
+
+#: ../src/cryptconfig.c:203 ../src/cryptconfig.c:638
+#, c-format
+msgid "You can't specify both --key-file and --existing-key-file\n"
+msgstr "U mag niet gelijktijdig --sleutelbestand en --bestaand-sleutelbestand opgeven\n"
+
+#: ../src/cryptconfig.c:208 ../src/cryptconfig.c:643
+#, c-format
+msgid "The existing key file must be an absolute path\n"
+msgstr "Het bestaande sleutelbestand moet een absoluut pad zijn\n"
+
+#: ../src/cryptconfig.c:213 ../src/cryptconfig.c:648 ../src/cryptconfig.c:1192
+#, c-format
+msgid "%s does not exist\n"
+msgstr "%s bestaat niet.\n"
+
+#: ../src/cryptconfig.c:225 ../src/cryptconfig.c:1003
+#, c-format
+msgid "The key file must be an absolute path\n"
+msgstr "Het sleutelbestand moet een absoluut pad zijn\n"
+
+#: ../src/cryptconfig.c:234
+#, c-format
+msgid "The key file directory does not exist\n"
+msgstr "De sleutelbestanddirectory bestaat niet.\n"
+
+#: ../src/cryptconfig.c:241
+#, c-format
+msgid "'%s' already exists.  Use --force to overwrite it.\n"
+msgstr "'%s' bestaat al. Gebruik --force om te overschrijven.\n"
+
+#: ../src/cryptconfig.c:247
+#, c-format
+msgid "Skipping data copy since user's home directory does not exist\n"
+msgstr "Kopiëren van gegevens wordt overgeslagen omdat de home directory van de gebruiker niet bestaat\n"
+
+#: ../src/cryptconfig.c:255
+#, c-format
+msgid "There is not enough disk space left to copy existing data\n"
+msgstr "Er is onvoldoende vrije schijfruimte om bestaande gegevens te kopiëren\n"
+
+#: ../src/cryptconfig.c:260
+#, c-format
+msgid "The specified image size is not large enough to hold the user's data\n"
+msgstr "De opgegeven image-grootte is niet toereikend voor de gegevens van de gebruiker\n"
+
+#: ../src/cryptconfig.c:265
+#, c-format
+msgid "Enter the password for %s"
+msgstr "Voer het wachtwoord in voor %s"
+
+#: ../src/cryptconfig.c:266
+#, c-format
+msgid "Enter %s's password"
+msgstr "Voer het wachtwoord in van %s"
+
+#: ../src/cryptconfig.c:268 ../src/cryptconfig.c:495 ../src/cryptconfig.c:631
+#: ../src/cryptconfig.c:1128 ../src/cryptconfig-lib.c:1718
+#, c-format
+msgid "Failed to get password\n"
+msgstr "Wachtwoord ophalen mislukt\n"
+
+#: ../src/cryptconfig.c:275 ../src/cryptconfig.c:653
+#, c-format
+msgid "Unable to decrypt %s with the supplied password\n"
+msgstr "Kan %s niet decoderen met het opgegeven wachtwoord\n"
+
+#: ../src/cryptconfig.c:280
+#, c-format
+msgid "Failed to get key data\n"
+msgstr "Sleutelgegevens ophalen mislukt\n"
+
+#: ../src/cryptconfig.c:285 ../src/cryptconfig.c:674 ../src/cryptconfig.c:1133
+#, c-format
+msgid "Failed to create image key\n"
+msgstr "Kan geen image-sleutel maken\n"
+
+#: ../src/cryptconfig.c:291 ../src/cryptconfig.c:1138
+#, c-format
+msgid "Failed to set permissions for key file\n"
+msgstr "Machtigingen instellen voor sleutelbestand mislukt\n"
+
+#. create and set permissions for our new image
+#. create the image file and fill it with zeros or random data
+#: ../src/cryptconfig.c:297 ../src/cryptconfig.c:687
+#, c-format
+msgid "\nCreating disk image... "
+msgstr "\nSchijf-image maken... "
+
+#: ../src/cryptconfig.c:301 ../src/cryptconfig.c:691
+#, c-format
+msgid "\nFailed to create image\n"
+msgstr "\nKan geen image maken\n"
+
+#: ../src/cryptconfig.c:305 ../src/cryptconfig.c:523
+#, c-format
+msgid "Done\n"
+msgstr "Gereed\n"
+
+#: ../src/cryptconfig.c:309
+#, c-format
+msgid "Failed to set permissions for new image\n"
+msgstr "Machtigingen instellen voor nieuwe image mislukt\n"
+
+#: ../src/cryptconfig.c:315 ../src/cryptconfig.c:333 ../src/cryptconfig.c:699
+#: ../src/cryptconfig.c:1207
+#, c-format
+msgid "Failed to open image\n"
+msgstr "Image openen mislukt\n"
+
+#: ../src/cryptconfig.c:321
+#, c-format
+msgid "Failed to format image\n"
+msgstr "Image formatteren mislukt\n"
+
+#: ../src/cryptconfig.c:328 ../src/cryptconfig.c:715
+#: ../src/cryptconfig-lib.c:1804
+#, c-format
+msgid "Failed to add extra key\n"
+msgstr "Extra sleutel toevoegen mislukt\n"
+
+#: ../src/cryptconfig.c:340
+#, c-format
+msgid "Failed to create filesystem.\n"
+msgstr "Bestandssysteem maken mislukt\n"
+
+#: ../src/cryptconfig.c:346 ../src/cryptconfig.c:1357
+#, c-format
+msgid "Failed to mount image\n"
+msgstr "Image koppelen mislukt\n"
+
+#: ../src/cryptconfig.c:352
+#, c-format
+msgid "Failed to set new directory permissions\n"
+msgstr "Machtigingen instellen voor nieuwe directory mislukt\n"
+
+#: ../src/cryptconfig.c:358
+#, c-format
+msgid "Copying existing data from %s.  This may take some time... "
+msgstr "Bestaande gegevens kopiëren van %s. Dit kan even duren..."
+
+#: ../src/cryptconfig.c:360
+#, c-format
+msgid "\nFailed to copy user data\n"
+msgstr "\nGebruikersgegevens kopiëren mislukt\n"
+
+#: ../src/cryptconfig.c:374 ../src/cryptconfig.c:506 ../src/cryptconfig.c:695
+#: ../src/cryptconfig.c:710 ../src/cryptconfig.c:827 ../src/cryptconfig.c:908
+#: ../src/cryptconfig.c:1143 ../src/cryptconfig.c:1281
+#: ../src/cryptconfig.c:1375
+#, c-format
+msgid "Done.\n"
+msgstr "Gereed\n"
+
+#: ../src/cryptconfig.c:387
+#, c-format
+msgid "Failed to setup pam_mount\n"
+msgstr "Instellen van pam_mount mislukt\n"
+
+#: ../src/cryptconfig.c:439 ../src/cryptconfig.c:558 ../src/cryptconfig.c:853
+msgid "Don't verify the new password"
+msgstr "Het nieuwe wachtwoord niet controleren"
+
+#: ../src/cryptconfig.c:440
+msgid "The filesystem type, defaults to ext3"
+msgstr "Het type bestandssysteem, standaard is ext3"
+
+#: ../src/cryptconfig.c:448 ../src/cryptconfig.c:574 ../src/cryptconfig.c:786
+#: ../src/cryptconfig.c:861 ../src/cryptconfig.c:956 ../src/cryptconfig.c:1049
+#: ../src/cryptconfig.c:1105 ../src/cryptconfig.c:1182
+#: ../src/cryptconfig.c:1249 ../src/cryptconfig.c:1314
+#, c-format
+msgid "parsing failed: %s\n"
+msgstr "Parseren mislukt: %s\n"
+
+#: ../src/cryptconfig.c:462
+#, c-format
+msgid "%s is not a block device\n"
+msgstr "%s is geen blokapparaat.\n"
+
+#: ../src/cryptconfig.c:468
+#, c-format
+msgid "%s is currently mounted\n"
+msgstr "%s is momenteel gekoppeld\n"
+
+#. get the password
+#: ../src/cryptconfig.c:494
+msgid "Enter a password for the partition"
+msgstr "Voer een wachtwoord in voor de partitie"
+
+#. format the device
+#: ../src/cryptconfig.c:500
+#, c-format
+msgid "Formatting device... "
+msgstr "Apparaat formatteren..."
+
+#: ../src/cryptconfig.c:502
+#, c-format
+msgid "\nFailed to format %s\n"
+msgstr "\nFormatteren van %s mislukt\n"
+
+#: ../src/cryptconfig.c:511
+#, c-format
+msgid "Failed to open %s\n"
+msgstr "Kan %s niet openen\n"
+
+#. create the filesystem
+#: ../src/cryptconfig.c:516
+#, c-format
+msgid "Creating file system on device...  "
+msgstr "Bestandssysteem maken op apparaat..."
+
+#: ../src/cryptconfig.c:519
+#, c-format
+msgid "\nFailed to create filesystem.\n"
+msgstr "\nBestandssysteem maken mislukt.\n"
+
+#: ../src/cryptconfig.c:560
+msgid "Overwrite an existing image"
+msgstr "Bestaande image overschrijven"
+
+#: ../src/cryptconfig.c:561 ../src/cryptconfig.c:1173
+msgid "The image key file"
+msgstr "Het sleutelbestand voor de image"
+
+#: ../src/cryptconfig.c:562
+msgid "The file system type, defaults to ext3"
+msgstr "Het type bestandssysteem, standaard is ext3"
+
+#: ../src/cryptconfig.c:594 ../src/cryptconfig.c:662
+#, c-format
+msgid "%s already exists.  Use --force to overwrite.\n"
+msgstr "%s bestaat al. Gebruik --force om te overschrijven.\n"
+
+#: ../src/cryptconfig.c:623
+msgid "Enter the password for the existing key file "
+msgstr "Voer het wachtwoord in voor het bestaande sleutelbestand"
+
+#: ../src/cryptconfig.c:625
+msgid "Enter a password to encrypt the key file with"
+msgstr "Voer een wachtwoord in om het sleutelbestand te decoderen"
+
+#: ../src/cryptconfig.c:627
+msgid "Enter the new image password"
+msgstr "Voer het nieuwe image-wachtwoord in"
+
+#: ../src/cryptconfig.c:667
+#, c-format
+msgid "Failed to read key data\n"
+msgstr "Sleutelgegevens lezen mislukt\n"
+
+#. format the image
+#: ../src/cryptconfig.c:704
+#, c-format
+msgid "Creating LUKS header... "
+msgstr "LUKS-header maken..."
+
+#: ../src/cryptconfig.c:706
+#, c-format
+msgid "\nFailed to format device\n"
+msgstr "\nApparaat formatteren mislukt\n"
+
+#: ../src/cryptconfig.c:722 ../src/cryptconfig-lib.c:1706
+#, c-format
+msgid "Failed to create map name\n"
+msgstr "Toewijzingsnaam maken mislukt\n"
+
+#: ../src/cryptconfig.c:727 ../src/cryptconfig-lib.c:1747
+#, c-format
+msgid "Failed to open device\n"
+msgstr "Apparaat openen mislukt\n"
+
+#: ../src/cryptconfig.c:733
+#, c-format
+msgid "Failed create file system on mapped device\n"
+msgstr "Bestandssysteem maken op toegewezen apparaat mislukt\n"
+
+#: ../src/cryptconfig.c:778
+msgid "The encrytped key for the image"
+msgstr "De gecodeerde sleutel voor de image"
+
+#: ../src/cryptconfig.c:799
+#, c-format
+msgid "Invalid size\n"
+msgstr "Ongeldige grootte\n"
+
+#: ../src/cryptconfig.c:804
+#, c-format
+msgid "Image file '%s' does not exist\n"
+msgstr "Image-bestand '%s' bestaat niet\n"
+
+#: ../src/cryptconfig.c:810
+#, c-format
+msgid "Failed to resize image\n"
+msgstr "Grootte van de image wijzigen mislukt\n"
+
+#: ../src/cryptconfig.c:816 ../src/cryptconfig.c:1352
+#, c-format
+msgid "Failed to unlock image\n"
+msgstr "Image kan niet worden ontgrendeld\n"
+
+#: ../src/cryptconfig.c:822
+#, c-format
+msgid "Failed to resize the file system on %s\n"
+msgstr "Grootte wijzigen van het bestandssysteem op %s mislukt\n"
+
+#: ../src/cryptconfig.c:874
+#, c-format
+msgid "Failed to stat '%s': %s\n"
+msgstr "Statistieken '%s' weergeven mislukt: %s\n"
+
+#. get both passwords
+#: ../src/cryptconfig.c:879
+msgid "Enter the EXISTING password"
+msgstr "Voer het BESTAANDE wachtwoord in"
+
+#: ../src/cryptconfig.c:880
+#, c-format
+msgid "Failed to get existing password\n"
+msgstr "Bestaande wachtwoord ophalen mislukt\n"
+
+#: ../src/cryptconfig.c:885
+msgid "Enter the NEW password"
+msgstr "Voer het NIEUWE wachtwoord in"
+
+#: ../src/cryptconfig.c:886
+#, c-format
+msgid "Failed to get new password\n"
+msgstr "Nieuwe wachtwoord ophalen mislukt\n"
+
+#: ../src/cryptconfig.c:893
+#, c-format
+msgid "Failed to decrypt key with old password.\n"
+msgstr "Bestand decoderen met oud wachtwoord mislukt\n"
+
+#: ../src/cryptconfig.c:898
+#, c-format
+msgid "Failed to encrypt new key\n"
+msgstr "Nieuwe sleutel decoderen mislukt\n"
+
+#: ../src/cryptconfig.c:903
+#, c-format
+msgid "Failed to retain permissions for %s\n"
+msgstr "Machtigingen behouden voor %s mislukt\n"
+
+#: ../src/cryptconfig.c:946
+msgid "The user's home image file, defaults to /home/$USER.img"
+msgstr "Het home-image-bestand voor de gebruiker is standaard /home/$USER.img"
+
+#: ../src/cryptconfig.c:948
+msgid "The user's image key file, defaults to /home/$USER.key"
+msgstr "Het sleutelbestand voor de gebruikers-image is standaard /home/$USER.img"
+
+#: ../src/cryptconfig.c:970 ../src/cryptconfig.c:1065
+#: ../src/cryptconfig-lib.c:1148
+#, c-format
+msgid "Failed to lookup user %s\n"
+msgstr "Gebruiker %s niet gevonden\n"
+
+#: ../src/cryptconfig.c:993
+#, c-format
+msgid "The image file must be an absolute path\n"
+msgstr "Het image-bestand moet een absoluut pad zijn\n"
+
+#: ../src/cryptconfig.c:1009
+#, c-format
+msgid "The image file '%s' does not exist\n"
+msgstr "Het image-bestand '%s' bestaat niet\n"
+
+#: ../src/cryptconfig.c:1014
+#, c-format
+msgid "The key file '%s' does not exist\n"
+msgstr "Het sleutelbestand '%s' bestaat niet\n"
+
+#: ../src/cryptconfig.c:1020
+#, c-format
+msgid "Failed to enable pam_mount\n"
+msgstr "Inschakelen van pam_mount mislukt\n"
+
+#: ../src/cryptconfig.c:1022
+#, c-format
+msgid "pam_mount is now enabled for %s\n"
+msgstr "pam_mount is nu ingeschakeld voor %s\n"
+
+#: ../src/cryptconfig.c:1041
+msgid "Disable pam_mount for all users"
+msgstr "pam_mount uitschakelen voor alle gebruikers"
+
+#: ../src/cryptconfig.c:1073
+#, c-format
+msgid "Failed to disable pam_mount\n"
+msgstr "Uitschakelen van pam_mount mislukt\n"
+
+#: ../src/cryptconfig.c:1075
+#, c-format
+msgid "pam_mount is disabled for all users\n"
+msgstr "pam_mount is uitgeschakeld voor alle gebruikers\n"
+
+#: ../src/cryptconfig.c:1077
+#, c-format
+msgid "pam_mount is disabled for %s\n"
+msgstr "pam_mount is uitgeschakeld voor %s\n"
+
+#: ../src/cryptconfig.c:1097
+msgid "Overwrite an existing key"
+msgstr "Een bestaande sleutel overschrijven"
+
+#: ../src/cryptconfig.c:1117
+#, c-format
+msgid "The key file already exists.  Use --force to overwrite it.\n"
+msgstr "Het sleutelbestand bestaat al. Gebruik --force om te overschrijven.\n"
+
+#: ../src/cryptconfig.c:1122
+#, c-format
+msgid "Failed to generate key data\n"
+msgstr "Sleutelgegevens genereren mislukt\n"
+
+#: ../src/cryptconfig.c:1126
+msgid "Enter a password for the new key"
+msgstr "Voer een wachtwoord in voor de nieuwe sleutel"
+
+#: ../src/cryptconfig.c:1172
+msgid "Mount the image at the specified directory"
+msgstr "De image koppelen aan de opgegeven directory"
+
+#: ../src/cryptconfig.c:1214
+#, c-format
+msgid "%s is not a directory\n"
+msgstr "'%s' is geen directory\n"
+
+#: ../src/cryptconfig.c:1219
+#, c-format
+msgid "Failed to mount device\n"
+msgstr "Apparaat kan niet worden gekoppeld\n"
+
+#: ../src/cryptconfig.c:1223
+#, c-format
+msgid "%s is now mounted at %s\n"
+msgstr "%s is nu gekoppeld bij %s\n"
+
+#: ../src/cryptconfig.c:1225
+#, c-format
+msgid "%s is now available as device %s\n"
+msgstr "%s is nu beschikbaar als apparaat %s\n"
+
+#: ../src/cryptconfig.c:1259
+#, c-format
+msgid "Unable to find device\n"
+msgstr "Kan apparaat niet vinden\n"
+
+#: ../src/cryptconfig.c:1265
+#, c-format
+msgid "Failed to umount: %s\n"
+msgstr "Loskoppelen is mislukt: %s\n"
+
+#: ../src/cryptconfig.c:1271
+#, c-format
+msgid "Unable to close mapped device\n"
+msgstr "Kan toegewezen apparaat niet sluiten\n"
+
+#: ../src/cryptconfig.c:1277
+#, c-format
+msgid "Unable to close loop device\n"
+msgstr "Kan loop-apparaat niet sluiten\n"
+
+#: ../src/cryptconfig.c:1306
+msgid "The filesystem type. The default is ext3."
+msgstr "Het type bestandssysteem. Standaard is ext3."
+
+#: ../src/cryptconfig.c:1342
+#, c-format
+msgid "Pam mount is not setup for '%s'\n"
+msgstr "Pam mount is niet ingesteld voor '%s'\n"
+
+#: ../src/cryptconfig.c:1347
+#, c-format
+msgid "%s is currently in use.  Unable to continue.\n"
+msgstr "%s is momenteel in gebruik. Kan niet doorgaan.\n"
+
+#: ../src/cryptconfig.c:1364
+#, c-format
+msgid "Failed to add %s\n"
+msgstr "Toevoegen van %s mislukt\n"
+
+#: ../src/cryptconfig.c:1369
+#, c-format
+msgid "Failed to remove %s\n"
+msgstr "Verwijderen van %s mislukt\n"
+
+#: ../src/cryptconfig.c:1420
+#, c-format
+msgid "\nusage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n\nCOMMANDS\n"
+msgstr "\ngebruik: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n \n OPDRACHTEN\n"
+
+#: ../src/cryptconfig.c:1423
+#, c-format
+msgid "\nYou can run %s [COMMAND] --help for more information on a command.\n"
+msgstr "\nU kunt %s [COMMAND] --help uitvoeren voor meer informatie over een opdracht.\n"
+
+#: ../src/cryptconfig.c:1469
+msgid "Create an encrypted home directory image and image key"
+msgstr "Een gecodeerde home directory-image en image-sleutel maken"
+
+#: ../src/cryptconfig.c:1472
+msgid "Enlarge a disk image and it's file system"
+msgstr "Een schijf-image en het bijbehorende bestandssysteem vergroten"
+
+#: ../src/cryptconfig.c:1475
+msgid "Change the password used to encrypt/decrypt a key file"
+msgstr "Het wachtwoord wijzigen voor het coderen/decoderen van een sleutelbestand"
+
+#: ../src/cryptconfig.c:1478
+msgid "Enable pam_mount with encrypted home directories"
+msgstr "pam_mount inschakelen met gecodeerde home directory's"
+
+#: ../src/cryptconfig.c:1481
+msgid "Disable pam_mount with encrypted home directories"
+msgstr "pam_mount uitschakelen met gecodeerde home directory's"
+
+#: ../src/cryptconfig.c:1484
+msgid "Create an arbitrary LUKS image"
+msgstr "Een arbitraire LUKS-image maken"
+
+#: ../src/cryptconfig.c:1487
+msgid "Create a LUKS partition on a device"
+msgstr "Een LUKS-partitie maken op een apparaat"
+
+#: ../src/cryptconfig.c:1490
+msgid "Create a new key that can be added to a LUKS image"
+msgstr "Een nieuwe sleutel maken die kan worden toegevoegd aan een LUKS-image"
+
+#: ../src/cryptconfig.c:1493
+msgid "Open a LUKS image"
+msgstr "Een LUKS-image openen"
+
+#: ../src/cryptconfig.c:1496
+msgid "Close devices using a LUKS image"
+msgstr "Apparaten sluiten die met een LUKS-image werken"
+
+#: ../src/cryptconfig.c:1499
+msgid "Add public data"
+msgstr "Openbare gegevens toevoegen"
+
+#: ../src/cryptconfig.c:1502
+msgid "Remove public data"
+msgstr "Openbare gegevens verwijderen"
+
+#: ../src/cryptconfig.c:1513
+#, c-format
+msgid "You must be root to run this command\n"
+msgstr "U moet root zijn om deze opdracht te kunnen uitvoeren\n"
+
+#: ../src/cryptconfig-lib.c:113
+#, c-format
+msgid "move failed: %s\n"
+msgstr "verplaatsen mislukt: %s\n"
+
+#: ../src/cryptconfig-lib.c:278 ../src/cryptconfig-lib.c:317
+#, c-format
+msgid "Failed to load "
+msgstr "Laden mislukt"
+
+#: ../src/cryptconfig-lib.c:284 ../src/cryptconfig-lib.c:323
+#, c-format
+msgid "Failed to load service list from "
+msgstr "Servicelijst laden mislukt:"
+
+#: ../src/cryptconfig-lib.c:358
+#, c-format
+msgid "Failed to get pam services list\n"
+msgstr "Ophalen lijst pam-services mislukt\n"
+
+#: ../src/cryptconfig-lib.c:600
+#, c-format
+msgid "key file is too large\n"
+msgstr "sleutelbestand is te groot\n"
+
+#: ../src/cryptconfig-lib.c:1120
+#, c-format
+msgid "Failed to create temp file\n"
+msgstr "Tijdelijk bestand maken mislukt\n"
+
+#: ../src/cryptconfig-lib.c:1494
+#, c-format
+msgid "g_dir_open: %s\n"
+msgstr "g_dir_open: %s\n"
+
+#: ../src/cryptconfig-lib.c:1512
+#, c-format
+msgid "copy failed: %s\n"
+msgstr "Kopiëren mislukt: %s\n"
+
+#: ../src/cryptconfig-lib.c:1712
+#, c-format
+msgid "The map device for this image is in use\n"
+msgstr "Het mappingapparaat voor deze image is in gebruik\n"
+
+#: ../src/cryptconfig-lib.c:1716
+msgid "Enter the key file password"
+msgstr "Voer het wachtwoord in voor het sleutelbestand"
+
+#: ../src/cryptconfig-lib.c:1716
+msgid "Enter the image password"
+msgstr "Voer het image-wachtwoord in"
+
+#: ../src/cryptconfig-lib.c:1725
+#, c-format
+msgid "Unable to access the specified key file\n"
+msgstr "Geen toegang tot opgegeven sleutelbestand\n"
+
+#: ../src/cryptconfig-lib.c:1730
+#, c-format
+msgid "Failed to decrypt key file with the provided password\n"
+msgstr "Bestand decoderen met opgegeven wachtwoord mislukt\n"
+
+#: ../src/cryptconfig-lib.c:1741
+#, c-format
+msgid "Failed to open disk image\n"
+msgstr "Schijf-image openen mislukt\n"
+
+#: ../src/cryptconfig-lib.c:1786
+#, c-format
+msgid "Extra key file does not exist\n"
+msgstr "Extra sleutelbestand bestaat niet\n"
+
+#: ../src/cryptconfig-lib.c:1790
+msgid "\nEnter the password for the extra key"
+msgstr "\nVoer het wachtwoord in voor de extra sleutel"
+
+#: ../src/cryptconfig-lib.c:1792
+#, c-format
+msgid "Failed to get extra key password\n"
+msgstr "Ophalen wachtwoord voor extra sleutel mislukt\n"
+
+#: ../src/cryptconfig-lib.c:1799
+#, c-format
+msgid "Failed to decrypt extra key\n"
+msgstr "Extra sleutel decoderen mislukt\n"
+
+#: ../src/pam_cryptpass.c:105
+msgid "Enter key file password"
+msgstr "Voer het wachtwoord voor het sleutelbestand in"
+

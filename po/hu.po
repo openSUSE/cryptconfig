@@ -1,0 +1,826 @@
+# translation of cryptconfig.hu.po to Hungarian
+# @TITLE@
+# Copyright (C) 2006, SUSE Linux GmbH, Nuremberg
+#
+# This file is distributed under the same license as @PACKAGE@ package. FIRST
+#
+# Gabor Kelemen <kelemeng@gnome.hu>, 2007.
+# Kalman Kemenczy <kkemenczy@novell.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: cryptconfig.hu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-25 20:21-0400\n"
+"PO-Revision-Date: 2008-10-30 13:37+0100\n"
+"Last-Translator: Kalman Kemenczy <kkemenczy@novell.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms:  nplurals=2; plural=(n != 1);\n"
+
+#: ../src/cryptconfig.c:78 ../src/cryptconfig.c:1096
+msgid "Don't verify the passphrase"
+msgstr "Ne ellenőrizze a jelmondatot"
+
+#: ../src/cryptconfig.c:79
+msgid "Don't setup pam_mount"
+msgstr "Ne állítsa be a pam_mountot"
+
+#: ../src/cryptconfig.c:80
+msgid "Don't copy user's existing data"
+msgstr "Ne másolja a felhasználó meglévő adatait"
+
+#: ../src/cryptconfig.c:81 ../src/cryptconfig.c:559
+msgid "Use random data to fill the image"
+msgstr "Véletlenszerű adatok használata a lemezkép feltöltésére"
+
+#: ../src/cryptconfig.c:82
+msgid "Overwrite existing image and key"
+msgstr "A meglévő lemezkép és kulcs felülírása"
+
+#: ../src/cryptconfig.c:83
+msgid "Remove the old home directory after data is copied"
+msgstr "A másolás befejeztével a régi könyvtár törlése"
+
+#: ../src/cryptconfig.c:85 ../src/cryptconfig.c:944
+msgid "Replace an existing user entry in pam_mount"
+msgstr "Meglévő felhasználóbejegyzés cseréje a pam_mountban"
+
+#: ../src/cryptconfig.c:86 ../src/cryptconfig.c:1174
+msgid "The filesystem type. The default is ext3"
+msgstr "A fájlrendszer típusa. Az alapértelmezés az ext3"
+
+#: ../src/cryptconfig.c:88
+msgid "The home directory image. The default is $USER_HOME.img"
+msgstr "A saját könyvtár lemezképe. Az alapértelmezés a $USER_HOME.img"
+
+#: ../src/cryptconfig.c:90
+msgid "The image key file. The default is $USER_HOME.key"
+msgstr "A lemezkép kulcsfájlja. Az alapértelmezés a $USER_HOME.key"
+
+#: ../src/cryptconfig.c:92 ../src/cryptconfig.c:564
+msgid "Use an existing key file instead of generating a new one"
+msgstr "Meglévő kulcsfájl használata új előállítása helyett"
+
+#: ../src/cryptconfig.c:94 ../src/cryptconfig.c:566
+msgid "Add an additional key file to the image"
+msgstr "Kiegészítő kulcsfájl hozzáadása a lemeképhez"
+
+#: ../src/cryptconfig.c:117
+#, c-format
+msgid "Using an encrypted home directory for root is not supported\n"
+msgstr "Titkosított saját könyvtár használata a root részére nem támogatott\n"
+
+#: ../src/cryptconfig.c:124 ../src/cryptconfig.c:475 ../src/cryptconfig.c:601
+#: ../src/cryptconfig.c:1199 ../src/cryptconfig.c:1332
+#, c-format
+msgid ""
+"%s is not a supported file system\n"
+"Supported file systems are: %s\n"
+msgstr ""
+"A(z) %s nem támogatott fájlrendszer\n"
+"A támogatott fájlrendszerek: %s\n"
+
+#: ../src/cryptconfig.c:132 ../src/cryptconfig.c:588
+#, c-format
+msgid "Invalid image size\n"
+msgstr "Érvénytelen lemezképméret\n"
+
+#: ../src/cryptconfig.c:138 ../src/cryptconfig.c:609
+#, c-format
+msgid "The image_size must be at least %lld MBs for the chosen file system.\n"
+msgstr ""
+"Az image_size értéke legalább %lld MB kell legyen a kijelölt "
+"fájlrendszerhez.\n"
+
+#: ../src/cryptconfig.c:146 ../src/cryptconfig.c:1325
+#, c-format
+msgid "Failed to lookup user '%s'\n"
+msgstr "Nem sikerült a(z) \"%s\" felhasználó kikeresése\n"
+
+#: ../src/cryptconfig.c:153 ../src/cryptconfig.c:977
+#, c-format
+msgid ""
+"pam_mount is already setup for %s.  Use --replace to replace the existing "
+"entry\n"
+msgstr ""
+"A pam_mount már be van állítva a következőhöz: %s. A meglévő bejegyzés "
+"cseréjéhez használja a --replace kapcsolót\n"
+
+#: ../src/cryptconfig.c:158 ../src/cryptconfig.c:982
+#, c-format
+msgid "Failed to remove old pam_mount entry\n"
+msgstr "A régi pam_mount bejegyzés eltávolítása sikertelen\n"
+
+#: ../src/cryptconfig.c:172
+#, c-format
+msgid "image file must be an absolute path\n"
+msgstr "a lemezképet abszolút elérési úttal kell megadni\n"
+
+#: ../src/cryptconfig.c:179
+#, c-format
+msgid "'%s' is not a directory\n"
+msgstr "A(z) \"%s\" nem könyvtár\n"
+
+#: ../src/cryptconfig.c:186 ../src/cryptconfig.c:617
+#, c-format
+msgid "Not enough space to create %s\n"
+msgstr "Nincs elegendő hely a(z) %s létrehozásához.\n"
+
+#: ../src/cryptconfig.c:196
+#, c-format
+msgid "%s already exists.  Use --force to overwrite it.\n"
+msgstr "A(z) %s már létezik. A felülíráshoz használja a --force kapcsolót.\n"
+
+#: ../src/cryptconfig.c:203 ../src/cryptconfig.c:638
+#, c-format
+msgid "You can't specify both --key-file and --existing-key-file\n"
+msgstr "Nem adhatja meg egyszerre a --key-file és a --existing-key-file kapcsolókat\n"
+
+#: ../src/cryptconfig.c:208 ../src/cryptconfig.c:643
+#, c-format
+msgid "The existing key file must be an absolute path\n"
+msgstr "A meglévő kulcsfájlt abszolút elérési úttal kell megadni\n"
+
+#: ../src/cryptconfig.c:213 ../src/cryptconfig.c:648 ../src/cryptconfig.c:1192
+#, c-format
+msgid "%s does not exist\n"
+msgstr "\"%s\" nem létezik\n"
+
+#: ../src/cryptconfig.c:225 ../src/cryptconfig.c:1003
+#, c-format
+msgid "The key file must be an absolute path\n"
+msgstr "A kulcsfájlt abszolút elérési úttal kell megadni\n"
+
+#: ../src/cryptconfig.c:234
+#, c-format
+msgid "The key file directory does not exist\n"
+msgstr "A kulcsfájlkönyvtár nem létezik\n"
+
+#: ../src/cryptconfig.c:241
+#, c-format
+msgid "'%s' already exists.  Use --force to overwrite it.\n"
+msgstr "\"%s\" már létezik. A felülíráshoz használja a --force kapcsolót.\n"
+
+#: ../src/cryptconfig.c:247
+#, c-format
+msgid "Skipping data copy since user's home directory does not exist\n"
+msgstr "Adatmásolás letiltva, mivel a felhasználó saját könyvtára nem létezik\n"
+
+#: ../src/cryptconfig.c:255
+#, c-format
+msgid "There is not enough disk space left to copy existing data\n"
+msgstr "Nincs elég lemezterület a meglévő adatok másolásához\n"
+
+#: ../src/cryptconfig.c:260
+#, c-format
+msgid "The specified image size is not large enough to hold the user's data\n"
+msgstr "A megadott lemezképméret nem elég nagy a felhasználó adatainak tárolásához\n"
+
+# %s is NFS, FTP, HTTP or SMB
+#: ../src/cryptconfig.c:265
+#, c-format
+msgid "Enter the password for %s"
+msgstr "Adja meg a(z) %s jelszót"
+
+#: ../src/cryptconfig.c:266
+#, c-format
+msgid "Enter %s's password"
+msgstr "Adja meg %s jelszavát"
+
+#: ../src/cryptconfig.c:268 ../src/cryptconfig.c:495 ../src/cryptconfig.c:631
+#: ../src/cryptconfig.c:1128 ../src/cryptconfig-lib.c:1718
+#, c-format
+msgid "Failed to get password\n"
+msgstr "Nem sikerült lekérni a jelszót\n"
+
+#: ../src/cryptconfig.c:275 ../src/cryptconfig.c:653
+#, c-format
+msgid "Unable to decrypt %s with the supplied password\n"
+msgstr "A(z) %s nem fejthető vissza a megadott jelszóval\n"
+
+#: ../src/cryptconfig.c:280
+#, c-format
+msgid "Failed to get key data\n"
+msgstr "A kulcsadatok lekérése sikertelen\n"
+
+#: ../src/cryptconfig.c:285 ../src/cryptconfig.c:674 ../src/cryptconfig.c:1133
+#, c-format
+msgid "Failed to create image key\n"
+msgstr "A lemezképkulcs létrehozása sikertelen\n"
+
+#: ../src/cryptconfig.c:291 ../src/cryptconfig.c:1138
+#, c-format
+msgid "Failed to set permissions for key file\n"
+msgstr "A jogosultság beállítása a kulcsfájlhoz sikertelen.\n"
+
+#. create and set permissions for our new image
+#. create the image file and fill it with zeros or random data
+#: ../src/cryptconfig.c:297 ../src/cryptconfig.c:687
+#, c-format
+msgid ""
+"\n"
+"Creating disk image... "
+msgstr ""
+"\n"
+"Lemezkép létrehozása... "
+
+# clients/lan_nfs_write.ycp:78
+#: ../src/cryptconfig.c:301 ../src/cryptconfig.c:691
+#, c-format
+msgid ""
+"\n"
+"Failed to create image\n"
+msgstr ""
+"\n"
+"A lemezkép létrehozása sikertelen\n"
+
+#: ../src/cryptconfig.c:305 ../src/cryptconfig.c:523
+#, c-format
+msgid "Done\n"
+msgstr "Kész\n"
+
+#: ../src/cryptconfig.c:309
+#, c-format
+msgid "Failed to set permissions for new image\n"
+msgstr "Az új lemezkép jogosultságainak beállítása sikertelen\n"
+
+#: ../src/cryptconfig.c:315 ../src/cryptconfig.c:333 ../src/cryptconfig.c:699
+#: ../src/cryptconfig.c:1207
+#, c-format
+msgid "Failed to open image\n"
+msgstr "A lemezkép megnyitása sikertelen.\n"
+
+#: ../src/cryptconfig.c:321
+#, c-format
+msgid "Failed to format image\n"
+msgstr "A lemezkép formázása sikertelen.\n"
+
+#: ../src/cryptconfig.c:328 ../src/cryptconfig.c:715
+#: ../src/cryptconfig-lib.c:1804
+#, c-format
+msgid "Failed to add extra key\n"
+msgstr "A kiegészítő kulcs hozzáadása sikertelen.\n"
+
+#: ../src/cryptconfig.c:340
+#, c-format
+msgid "Failed to create filesystem.\n"
+msgstr "A fájlrendszer létrehozása sikertelen.\n"
+
+#: ../src/cryptconfig.c:346 ../src/cryptconfig.c:1357
+#, c-format
+msgid "Failed to mount image\n"
+msgstr "A lemezkép csatolása sikertelen.\n"
+
+#: ../src/cryptconfig.c:352
+#, c-format
+msgid "Failed to set new directory permissions\n"
+msgstr "Az új könyvtárjogosultságok beállítása sikertelen.\n"
+
+#: ../src/cryptconfig.c:358
+#, c-format
+msgid "Copying existing data from %s.  This may take some time... "
+msgstr "Meglévő adatok másolása a következőből: %s. Ez eltarthat egy ideig... "
+
+#: ../src/cryptconfig.c:360
+#, c-format
+msgid ""
+"\n"
+"Failed to copy user data\n"
+msgstr ""
+"\n"
+"A felhasználói adatok másolása sikertelen.\n"
+
+#: ../src/cryptconfig.c:374 ../src/cryptconfig.c:506 ../src/cryptconfig.c:695
+#: ../src/cryptconfig.c:710 ../src/cryptconfig.c:827 ../src/cryptconfig.c:908
+#: ../src/cryptconfig.c:1143 ../src/cryptconfig.c:1281
+#: ../src/cryptconfig.c:1375
+#, c-format
+msgid "Done.\n"
+msgstr "Kész.\n"
+
+#: ../src/cryptconfig.c:387
+#, c-format
+msgid "Failed to setup pam_mount\n"
+msgstr "A pam_mount beállítása sikertelen.\n"
+
+#: ../src/cryptconfig.c:439 ../src/cryptconfig.c:558 ../src/cryptconfig.c:853
+msgid "Don't verify the new password"
+msgstr "NE ellenőrizze az új jelszót"
+
+#: ../src/cryptconfig.c:440
+msgid "The filesystem type, defaults to ext3"
+msgstr "A fájlrendszer típusa, az alapértelmezés az ext3"
+
+#: ../src/cryptconfig.c:448 ../src/cryptconfig.c:574 ../src/cryptconfig.c:786
+#: ../src/cryptconfig.c:861 ../src/cryptconfig.c:956 ../src/cryptconfig.c:1049
+#: ../src/cryptconfig.c:1105 ../src/cryptconfig.c:1182
+#: ../src/cryptconfig.c:1249 ../src/cryptconfig.c:1314
+#, c-format
+msgid "parsing failed: %s\n"
+msgstr "az elemzés sikertelen: %s\n"
+
+#: ../src/cryptconfig.c:462
+#, c-format
+msgid "%s is not a block device\n"
+msgstr "A(z) %s nem blokkeszköz\n"
+
+#: ../src/cryptconfig.c:468
+#, c-format
+msgid "%s is currently mounted\n"
+msgstr "A(z) %s jelenleg csatolva van\n"
+
+#. get the password
+#: ../src/cryptconfig.c:494
+msgid "Enter a password for the partition"
+msgstr "Adja meg a partíció jelszavát"
+
+#. format the device
+#: ../src/cryptconfig.c:500
+#, c-format
+msgid "Formatting device... "
+msgstr "Eszköz formázása... "
+
+#: ../src/cryptconfig.c:502
+#, c-format
+msgid ""
+"\n"
+"Failed to format %s\n"
+msgstr ""
+"\n"
+"Nem sikerült a(z) %s formázása\n"
+
+#: ../src/cryptconfig.c:511
+#, c-format
+msgid "Failed to open %s\n"
+msgstr "A(z) %s megnyitása sikertelen\n"
+
+# %s is e.g. ext3 or reiserfs
+#. create the filesystem
+#: ../src/cryptconfig.c:516
+#, c-format
+msgid "Creating file system on device...  "
+msgstr "Fájlrendszer létrehozása az eszközön...  "
+
+#: ../src/cryptconfig.c:519
+#, c-format
+msgid ""
+"\n"
+"Failed to create filesystem.\n"
+msgstr ""
+"\n"
+"A fájlrendszer létrehozása sikertelen.\n"
+
+#: ../src/cryptconfig.c:560
+msgid "Overwrite an existing image"
+msgstr "Meglévő lemezkép felülírása"
+
+#: ../src/cryptconfig.c:561 ../src/cryptconfig.c:1173
+msgid "The image key file"
+msgstr "A lemezképkulcs fájl"
+
+#: ../src/cryptconfig.c:562
+msgid "The file system type, defaults to ext3"
+msgstr "A fájlrendszer típusa, az alapértelmezett az ext3"
+
+#: ../src/cryptconfig.c:594 ../src/cryptconfig.c:662
+#, c-format
+msgid "%s already exists.  Use --force to overwrite.\n"
+msgstr "%s már létezik. A felülíráshoz használja a --force kapcsolót.\n"
+
+# %s is NFS, FTP, HTTP or SMB
+#: ../src/cryptconfig.c:623
+msgid "Enter the password for the existing key file "
+msgstr "Adja meg a következő meglévő lemezkép jelszavát: "
+
+# %s is NFS, FTP, HTTP or SMB
+#: ../src/cryptconfig.c:625
+msgid "Enter a password to encrypt the key file with"
+msgstr "Adjon meg jelszót a kulcsfájl titkosításához ezzel: "
+
+#: ../src/cryptconfig.c:627
+msgid "Enter the new image password"
+msgstr "Adja meg az új lemezképjelszót"
+
+#: ../src/cryptconfig.c:667
+#, c-format
+msgid "Failed to read key data\n"
+msgstr "A kulcsadatok olvasása sikertelen.\n"
+
+#. format the image
+#: ../src/cryptconfig.c:704
+#, c-format
+msgid "Creating LUKS header... "
+msgstr "A LUKS fejléc létrehozása... "
+
+#: ../src/cryptconfig.c:706
+#, c-format
+msgid ""
+"\n"
+"Failed to format device\n"
+msgstr ""
+"\n"
+"Az eszköz formázása sikertelen.\n"
+
+# clients/lan_nfs_write.ycp:78
+#: ../src/cryptconfig.c:722 ../src/cryptconfig-lib.c:1706
+#, c-format
+msgid "Failed to create map name\n"
+msgstr "A leképezés nevének létrehozása sikertelen.\n"
+
+#: ../src/cryptconfig.c:727 ../src/cryptconfig-lib.c:1747
+#, c-format
+msgid "Failed to open device\n"
+msgstr "Az eszköz megnyitása sikertelen.\n"
+
+#: ../src/cryptconfig.c:733
+#, c-format
+msgid "Failed create file system on mapped device\n"
+msgstr "A fájlrendszer vagy leképezett eszköz létrehozása sikertelen.\n"
+
+#: ../src/cryptconfig.c:778
+msgid "The encrytped key for the image"
+msgstr "A lemezkép titkosított kulcsa"
+
+#: ../src/cryptconfig.c:799
+#, c-format
+msgid "Invalid size\n"
+msgstr "Érvénytelen méret\n"
+
+#: ../src/cryptconfig.c:804
+#, c-format
+msgid "Image file '%s' does not exist\n"
+msgstr "A(z) \"%s\" kulcsfájl nem létezik\n"
+
+#: ../src/cryptconfig.c:810
+#, c-format
+msgid "Failed to resize image\n"
+msgstr "A lemezkép átméretezése sikertelen.\n"
+
+#: ../src/cryptconfig.c:816 ../src/cryptconfig.c:1352
+#, c-format
+msgid "Failed to unlock image\n"
+msgstr "A lemezkép leválasztása sikertelen\n"
+
+#: ../src/cryptconfig.c:822
+#, c-format
+msgid "Failed to resize the file system on %s\n"
+msgstr "A fájlrendszer átméretezése sikertelen a következőn: %s\n"
+
+#: ../src/cryptconfig.c:874
+#, c-format
+msgid "Failed to stat '%s': %s\n"
+msgstr "Sikertelen statisztika '%s': %s\n"
+
+#. get both passwords
+#: ../src/cryptconfig.c:879
+msgid "Enter the EXISTING password"
+msgstr "Adja meg a MEGLÉVŐ jelszót"
+
+#: ../src/cryptconfig.c:880
+#, c-format
+msgid "Failed to get existing password\n"
+msgstr "A meglévő jelszó lekérése sikertelen.\n"
+
+#: ../src/cryptconfig.c:885
+msgid "Enter the NEW password"
+msgstr "Adja meg az ÚJ jelszót"
+
+#: ../src/cryptconfig.c:886
+#, c-format
+msgid "Failed to get new password\n"
+msgstr "Az új jelszó lekérése sikertelen.\n"
+
+#: ../src/cryptconfig.c:893
+#, c-format
+msgid "Failed to decrypt key with old password.\n"
+msgstr "A kulcs visszafejtése a régi kulccsal sikertelen.\n"
+
+#: ../src/cryptconfig.c:898
+#, c-format
+msgid "Failed to encrypt new key\n"
+msgstr "Az új kulcs titkosítása sikertelen.\n"
+
+#: ../src/cryptconfig.c:903
+#, c-format
+msgid "Failed to retain permissions for %s\n"
+msgstr "A jogosultság megőrzése sikertelen ehhez: %s\n"
+
+#: ../src/cryptconfig.c:946
+msgid "The user's home image file, defaults to /home/$USER.img"
+msgstr "A felhasználó saját könyvtárának lemezképe, alapértelmezésben /home/$USER.img"
+
+#: ../src/cryptconfig.c:948
+msgid "The user's image key file, defaults to /home/$USER.key"
+msgstr "A felhasználó lemezképének kulcsfájlja, alapértelmezésben /home/$USER.key"
+
+#: ../src/cryptconfig.c:970 ../src/cryptconfig.c:1065
+#: ../src/cryptconfig-lib.c:1148
+#, c-format
+msgid "Failed to lookup user %s\n"
+msgstr "A felhasználó kikeresése sikertelen: %s\n"
+
+#: ../src/cryptconfig.c:993
+#, c-format
+msgid "The image file must be an absolute path\n"
+msgstr "A lemezképet abszolút elérési úttal kell megadni\n"
+
+#: ../src/cryptconfig.c:1009
+#, c-format
+msgid "The image file '%s' does not exist\n"
+msgstr "A(z) \"%s\" lemezkép nem létezik\n"
+
+#: ../src/cryptconfig.c:1014
+#, c-format
+msgid "The key file '%s' does not exist\n"
+msgstr "A(z) \"%s\" kulcsfájl nem létezik\n"
+
+#: ../src/cryptconfig.c:1020
+#, c-format
+msgid "Failed to enable pam_mount\n"
+msgstr "A pam_mount engedélyezése sikertelen\n"
+
+#: ../src/cryptconfig.c:1022
+#, c-format
+msgid "pam_mount is now enabled for %s\n"
+msgstr "A pam_mount engedélyezve a következőnek: %s\n"
+
+#: ../src/cryptconfig.c:1041
+msgid "Disable pam_mount for all users"
+msgstr "A pam_mount letiltása minden felhasználóhoz"
+
+#: ../src/cryptconfig.c:1073
+#, c-format
+msgid "Failed to disable pam_mount\n"
+msgstr "A pam_mount letiltása siekrtelen\n"
+
+#: ../src/cryptconfig.c:1075
+#, c-format
+msgid "pam_mount is disabled for all users\n"
+msgstr "A pam_mount letiltva minden felhasználó számára\n"
+
+#: ../src/cryptconfig.c:1077
+#, c-format
+msgid "pam_mount is disabled for %s\n"
+msgstr "A pam_mount letiltva a következő számára: %s\n"
+
+#: ../src/cryptconfig.c:1097
+msgid "Overwrite an existing key"
+msgstr "Meglévő kulcs felülírása"
+
+#: ../src/cryptconfig.c:1117
+#, c-format
+msgid "The key file already exists.  Use --force to overwrite it.\n"
+msgstr "A kulcsfájl már létezik. A felülíráshoz használja a --force kapcsolót.\n"
+
+#: ../src/cryptconfig.c:1122
+#, c-format
+msgid "Failed to generate key data\n"
+msgstr "A kulcsadatok előállítása siekrtelen.\n"
+
+# %s is NFS, FTP, HTTP or SMB
+#: ../src/cryptconfig.c:1126
+msgid "Enter a password for the new key"
+msgstr "Adja meg az új kulcs jelszavát"
+
+#: ../src/cryptconfig.c:1172
+msgid "Mount the image at the specified directory"
+msgstr "A lemezkép felcsatolása a megadott könyvtárba"
+
+#: ../src/cryptconfig.c:1214
+#, c-format
+msgid "%s is not a directory\n"
+msgstr "A(z) %s nem könyvtár\n"
+
+#: ../src/cryptconfig.c:1219
+#, c-format
+msgid "Failed to mount device\n"
+msgstr "Az eszköz csatlása sikertelen\n"
+
+#: ../src/cryptconfig.c:1223
+#, c-format
+msgid "%s is now mounted at %s\n"
+msgstr "A(z) %s jelenleg csatolva van a következő helyre: %s\n"
+
+#: ../src/cryptconfig.c:1225
+#, c-format
+msgid "%s is now available as device %s\n"
+msgstr "%s eszközként elérhető a következőn: %s\n"
+
+#: ../src/cryptconfig.c:1259
+#, c-format
+msgid "Unable to find device\n"
+msgstr "Az eszköz nem található\n"
+
+#: ../src/cryptconfig.c:1265
+#, c-format
+msgid "Failed to umount: %s\n"
+msgstr "A(z) %s leválasztása sikertelen\n"
+
+#: ../src/cryptconfig.c:1271
+#, c-format
+msgid "Unable to close mapped device\n"
+msgstr "A leképezett eszköz nem zárható le\n"
+
+#: ../src/cryptconfig.c:1277
+#, c-format
+msgid "Unable to close loop device\n"
+msgstr "A hurokeszköz nem zárható le\n"
+
+#: ../src/cryptconfig.c:1306
+msgid "The filesystem type. The default is ext3."
+msgstr "A fájlrendszer típusa. Az ext3 az alapértelmezett."
+
+#: ../src/cryptconfig.c:1342
+#, c-format
+msgid "Pam mount is not setup for '%s'\n"
+msgstr "A pam_mount nincs beállítva a következőhöz: %s\n"
+
+#: ../src/cryptconfig.c:1347
+#, c-format
+msgid "%s is currently in use.  Unable to continue.\n"
+msgstr "A(z) %s jelenleg használatban van.  Nem lehet folytatni.\n"
+
+#: ../src/cryptconfig.c:1364
+#, c-format
+msgid "Failed to add %s\n"
+msgstr "A(z) %s hozzáadása sikertelen.\n"
+
+#: ../src/cryptconfig.c:1369
+#, c-format
+msgid "Failed to remove %s\n"
+msgstr "A(z) %s eltávolítása sikertelen.\n"
+
+#: ../src/cryptconfig.c:1420
+#, c-format
+msgid ""
+"\n"
+"usage: %s [COMMAND] [COMMAND-OPTIONS] arg1 arg2...\n"
+"\n"
+"COMMANDS\n"
+msgstr ""
+"\n"
+"használat: %s [PARANCS] [PARANCS-KAPCSOLÓI] arg1 arg2...\n"
+"\n"
+"PARANCSOK\n"
+
+#: ../src/cryptconfig.c:1423
+#, c-format
+msgid ""
+"\n"
+"You can run %s [COMMAND] --help for more information on a command.\n"
+msgstr ""
+"\n"
+"További információként adja ki a %s [PARANCS] --help parancsot.\n"
+
+#: ../src/cryptconfig.c:1469
+msgid "Create an encrypted home directory image and image key"
+msgstr "Titkosított saját könyvtár lemezkép és lemezképkulcs létrehozása"
+
+#: ../src/cryptconfig.c:1472
+msgid "Enlarge a disk image and it's file system"
+msgstr "Lemezkép és fájlrendszerének növelése"
+
+#: ../src/cryptconfig.c:1475
+msgid "Change the password used to encrypt/decrypt a key file"
+msgstr "Kulcsfájl titkosításához/visszafejtéséhez használt jelszó módosítása"
+
+#: ../src/cryptconfig.c:1478
+msgid "Enable pam_mount with encrypted home directories"
+msgstr "A pam_mount engedélyezése titkosított saját könyvtárakkal"
+
+#: ../src/cryptconfig.c:1481
+msgid "Disable pam_mount with encrypted home directories"
+msgstr "A pam_mount letiltása titkosított saját könyvtárakkal"
+
+#: ../src/cryptconfig.c:1484
+msgid "Create an arbitrary LUKS image"
+msgstr "Tetszőleges LUKS lemezkép létrehozása"
+
+#: ../src/cryptconfig.c:1487
+msgid "Create a LUKS partition on a device"
+msgstr "LUKS partíció létrehozása egy eszközön"
+
+#: ../src/cryptconfig.c:1490
+msgid "Create a new key that can be added to a LUKS image"
+msgstr "Új kulcs létrehozása, amely felvehető egy LUKS lemezképhez"
+
+#: ../src/cryptconfig.c:1493
+msgid "Open a LUKS image"
+msgstr "LUKS lemezkép megnyitása"
+
+#: ../src/cryptconfig.c:1496
+msgid "Close devices using a LUKS image"
+msgstr "LUKS lemezképet használó eszközök bezárása"
+
+#: ../src/cryptconfig.c:1499
+msgid "Add public data"
+msgstr "Publikus adat hozzáadása"
+
+#: ../src/cryptconfig.c:1502
+msgid "Remove public data"
+msgstr "Publikus adat eltávolítása"
+
+#: ../src/cryptconfig.c:1513
+#, c-format
+msgid "You must be root to run this command\n"
+msgstr "A parancs futtatásához rendszergazdának kell lennie\n"
+
+#: ../src/cryptconfig-lib.c:113
+#, c-format
+msgid "move failed: %s\n"
+msgstr "A mozgatás sikertelen: %s\n"
+
+#: ../src/cryptconfig-lib.c:278 ../src/cryptconfig-lib.c:317
+#, c-format
+msgid "Failed to load "
+msgstr "Nem sikerült a következő betöltése: "
+
+#: ../src/cryptconfig-lib.c:284 ../src/cryptconfig-lib.c:323
+#, c-format
+msgid "Failed to load service list from "
+msgstr "A szolgáltatáslista betöltése sikertelen innen: "
+
+#: ../src/cryptconfig-lib.c:358
+#, c-format
+msgid "Failed to get pam services list\n"
+msgstr "A pam szolgáltatások listájának lekérése sikertelen\n"
+
+#: ../src/cryptconfig-lib.c:600
+#, c-format
+msgid "key file is too large\n"
+msgstr "a kulcsfájl túl nagy\n"
+
+#: ../src/cryptconfig-lib.c:1120
+#, c-format
+msgid "Failed to create temp file\n"
+msgstr "Nem hozható létre ideiglenes fájl\n"
+
+#: ../src/cryptconfig-lib.c:1494
+#, c-format
+msgid "g_dir_open: %s\n"
+msgstr "g_dir_open: %s\n"
+
+#: ../src/cryptconfig-lib.c:1512
+#, c-format
+msgid "copy failed: %s\n"
+msgstr "A másolás sikertelen: %s\n"
+
+#: ../src/cryptconfig-lib.c:1712
+#, c-format
+msgid "The map device for this image is in use\n"
+msgstr "A lemezképhez használt leképező eszköz használatban van\n"
+
+#: ../src/cryptconfig-lib.c:1716
+msgid "Enter the key file password"
+msgstr "Adja meg a kulcsfájl jelszavát"
+
+#: ../src/cryptconfig-lib.c:1716
+msgid "Enter the image password"
+msgstr "Adja meg a lemezkép jelszavát"
+
+#: ../src/cryptconfig-lib.c:1725
+#, c-format
+msgid "Unable to access the specified key file\n"
+msgstr "A megadott kulcsfájl nem érhető el\n"
+
+#: ../src/cryptconfig-lib.c:1730
+#, c-format
+msgid "Failed to decrypt key file with the provided password\n"
+msgstr "A kulcsfájl visszafejtése a megadott jelszóval sikertelen\n"
+
+#: ../src/cryptconfig-lib.c:1741
+#, c-format
+msgid "Failed to open disk image\n"
+msgstr "A lemezkép megnyitása sikertelen\n"
+
+#: ../src/cryptconfig-lib.c:1786
+#, c-format
+msgid "Extra key file does not exist\n"
+msgstr "A kiegészítő kulcsfájl nem létezik\n"
+
+# %s is NFS, FTP, HTTP or SMB
+#: ../src/cryptconfig-lib.c:1790
+msgid ""
+"\n"
+"Enter the password for the extra key"
+msgstr ""
+"\n"
+"Adja meg a kiegészítő kulcs jelszavát"
+
+#: ../src/cryptconfig-lib.c:1792
+#, c-format
+msgid "Failed to get extra key password\n"
+msgstr "A kiegészítő kulcs jelszavának lekérése sikertelen\n"
+
+#: ../src/cryptconfig-lib.c:1799
+#, c-format
+msgid "Failed to decrypt extra key\n"
+msgstr "A kiegészítő kulcs visszafejtése sikertelen\n"
+
+#: ../src/pam_cryptpass.c:105
+msgid "Enter key file password"
+msgstr "Adja meg a kulcsfájl jelszavát"
+
